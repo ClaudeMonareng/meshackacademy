@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/siphosethu.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>MACA | Official Website</title>
+    <title>Monareng Academy | Official Website </title>
 </head>
 <body>
     <header>
         <div class="logo-section">
-            <a href="index.html"><img src="images/siphosethu.png"></a>
-            <a href="index.html"><h3>MACA</h3></a>
+            <a href="index.html"><img src="images/MA.png"></a>
+            <a href="index.html"><h3>MONARENG ACADEMY</h3></a>
         </div>
         <div class="menu-btn"></div>
         <div class="navigation">
             <div class="navigation-items">
-                <a href="index.html">Home</a>
-                <a href="#about">About</a>
-                <a href="#teacher">Students</a>
-                <a href="#services">Services</a>
-                <a href="#testimonials">Testimonies</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html" onclick="toggleMenu()">Home</a>
+                <a href="#features" onclick="toggleMenu()">Features</a>
+                <a href="#about" onclick="toggleMenu()">About</a>
+                <a href="#learners" onclick="toggleMenu()">Students</a>
+                <a href="#services" onclick="toggleMenu()">Services</a>
+                <a href="#teachers" onclick="toggleMenu()">Tutors</a>
+                <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+                <a href="#contact" onclick="toggleMenu()">Contact</a>
             </div>
         </div>
     </header>
@@ -31,40 +34,56 @@
 
     <section class="home background2" id="home">
         <div class="content">
-            <h1>Welcome to <br><span>Maths And Coding Academy</span></h1>
-            <div class="flex-center">
-                <h3>Stars shine brighter in the dark</h3>
-            </div>
-            <div class="flex-center">
-                <a href="#about" class="btn" id="btn">Learn More</a>
+            <div class="element">
+                <h1>Welcome to <br><span><span>Monareng</span>Academy</span></h1>
+                <div class="flex-center">
+                    <h3>Maths, Science and Digital Technology Excellence</h3>
+                </div>
+                <div class="flex-center">
+                    <a href="#about" class="btn" id="btn">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- TRENDS AND NEWS -->
+
+    <div class="swiper mySwiper">
+        <h1 class="heading">News and Trends</h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><h2></h2><p>We are commencing our year on the 10th of February, with great optimism and caution. We can't wait to welcome over 20 new students in the first two months.</p><img src="images/girl-doing-math.jpg"></div>
+            <!-- <div class="swiper-slide"><h2>Top Achieving Facilitators</h2><p>We are commencing our year on the 10th of February, with great optimism and caution. We can't wait to welcome over 20 new students of our class .</p><img src="images/math2.jpg"></div>
+            <div class="swiper-slide"><img src="images/math-map.png"></div>
+            <div class="swiper-slide"><img src="images/hacked.jpg"></div>
+            <div class="swiper-slide"><img src="images/sphiwe-20190804-WA0012.jpg"></div> -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
     <!-- FEATURES -->
 
     <section class="features" id="features">
-        <h3 class="heading" style="text-align: center; margin:2em 0;">Why Students Choose Us</h3>
+        <h1 class="heading">Why Students Choose Us</h1>
         <div class="box-container">
             <div class="box">
-                <img src="images/imaqges.png" alt="">
+                <img src="images/certified.png" alt="">
                 <div class="info">
-                    <h3>Continuous Mentoring</h3>
-                    <!-- <p>Our Teachers and Staff receive continuous learning and development, in partnership with local stakeholders, to remain relevant and competitve in the industry.</p> -->
+                    <h3>Student Growth Centered</h3>
                 </div>
             </div>
             <div class="box">
-                <img src="images/certifiedd.png" alt="">
+                <img src="images/remote.png" alt="">
                 <div class="info">
-                    <h3>Professional Teachers</h3>
+                    <h3>Access to WiFi</h3>
                     <p></p>
                 </div>
             </div>
             <div class="box">
-                <img src="images/f.png" alt="">
+                <img src="images/team.png" alt="">
                 <div class="info">
-                    <h3>Developed Programs</h3>
-                    <!-- <p>Teaching curricula and methodologies of the Tutoring school are tried and tested and remain highly responsive and compliant with the National and Provincial Department of Basic Education's policies.</p> -->
+                    <h3>Frequent Assessment Feedback</h3>
                 </div>
             </div>
         </div>
@@ -77,11 +96,11 @@
             <img src="images/hackathon.jpg" alt="">
         </div>
         <div class="content">
-            <h3>About Us</h3>
+            <h3 class="heading">About Us</h3>
             <div class="para">
-                <p class="list">We strive to provide a friendly, warm, supportive, safe, clean, stimulating, loving and caring enrionment for our children.</p>
-                <p class="list">We are committed to creating and providing an optimistic early learning child care experience which promotes each child's social, emotional, physical and cognitive development established in our commitment to the families we serve. </p>
-                <p class="list">We are committed to total exellence and value-added service towards our clients and partners and in particular the little ones with a view to become a dominant child care provider in our chosen sphere of operation. We will achieve this by paying close and personal attention to each child which is essential to providing quality experience by engaging highly qualified and appropriately trained personnel to ensure each child has proper supervision.</p>
+                <p class="list">We are a new, upcoming, innovative and world-class, Mathematics, Science and Digital Technology Academy, in the province of KwaZulu-Natal, Newcastle.</p>
+                <p class="list">We offer content and lesson delivery in small classes, that is both pioneering and responsive to cater for the special individual needs of each of our learners, so that they get the most from our offering, in order to perform at their optimal level in their mainstream assessment standards.</p>
+                <p class="list">We are committed to excellence of the highest possible order, to do justice to the ailing mainstream education system, particularly in the fields of science and technology and ensuring that we are well positioned to meaningfully participate and compete with the rest of the world.</p>
                 <div class="flex-center">
                     <a href="#contact" class="btn">Contact Us</a>
                 </div>
@@ -96,112 +115,75 @@
         </div>
     </div>
 
-    <!-- TEACHERS -->
+    <!-- LEARNERS -->
 
-    <section class="teacher" id="teacher">
-
+    <section class="learner" id="learners">
         <h1 class="heading">Our Amazing Students</h1>
-        
         <div class="box-container">
             <div class="box">
-                <img src="images/thumbnail.png" alt="">
-                <h3>Claude Monareng</h3>
-                <span>Group CEO</span>
-                <p>Certified Data Scientist and Professional Web Developer. Wits University Alumni, Co-Founder and Former CEO of KEWAA and former Board of Director of PECOP-SOWETO.</p>
-            </div>
-            <div class="box">
-                <img src="images/informativee.png" alt="">
+                <img src="images/bonga.jpg" alt="">
                 <h3>Bongalethu Mlambo</h3>
-                <span>Physics Stream</span>
-                <!-- <p>Im a hard worker. I love raising my children with discipline and to be God loving human-beings. In my spare time i enjoy watching television and cooking. I also love teaching in unday school at church. I generally enjoy spending my time with children from all different spheres of life while imparting in them poittive values about life and Skills so that they grow to become responible leaders of tomorrow. I started my passion teaching, particularly at a creche from a tender age. I loved being outdoors, being a friendly person with community members.Continuously learning and development. As of now, 2024, i see myself retired in the next five years.</p> -->
+                <span>Grade 10 Accounting Stream</span>
+            </div>
+            <div class="box">
+                <img src="images/Gabela.jpg" alt="">
+                <h3>Nhlakanipho Gabela</h3>
+                <span>Grade 10 Physics Stream</span>
             </div>
             <div class="box">
                 <img src="images/informativee.png" alt="">
-                <h3>Nokwazi Nxumalo</h3>
-                <span>Physics Stream</span>
-                <!-- <p>In my spare time i enjoy cooking. During the weekend i enjoy taking my kid out for shopping. I started working here in the creche in 2019 April. I fell in love with the school since i joined it, because i love the respectful and warm environment here at Siphosethu. The parents in the community continue to entrust us with the care of their children. I have learned a lot so far, in my experience working at Siphosethu, especially from engaing in different workshops and acquiring new skills and knowledge to enhance my ECD qualifications. I like it being here, it feels like home. I have also learned about working together with different stakeholders such as parents, the community, teachers and children. My goal is to see myself progressing further in my career and becoming the best ECD practitioner I can be. </p> -->
+                <h3>Nokwazi Phungwayo</h3>
+                <span>Grade 10 Physics Stream</span>
             </div>
             <div class="box">
                 <img src="images/informativee.png" alt="">
-                <h3>Anele Ndlovu</h3>
-                <span>General Stream</span>
-                <!-- <p>I enjoy helping children do their homework exercises in my spare. I love to do laundry, watch television and engange with friends and family on social media. I also love attending church service on sundays. I started working at Siphoethu Creche and Pre-School in 2016. I was recruited by one of the teachers from the school, while i was working at Dark Ponds ABET in Madadeni section 1. I received an ECD qualification from the Hope Academic Skills center. Im currently still learning there for my diploma qualification. I have learned a great deal of skills in my experience at Siphosethu Creche and Pre-school as an ECD practitioner. Thanks to the principal Mrs.Mtambo who always encourages continuous learning and development from teachers that i am who i am today. In five years time, i see myself working as an accomplished formal education teacher and having had my diploma qualification complete.</p> -->
+                <h3>Mpume Ndlovu</h3>
+                <span>Grade 10 Physics Stream</span>
             </div>
             <div class="box">
-                <img src="images/informativee.png" alt="">
+                <img src="images/seluleko.jpg" style="object-position: center;" alt="">
                 <h3>Seluleko Mbatha</h3>
-                <span>Physics Stream</span>
-                <!-- <p>When im at home, in my spare time i love watching television, going out with friends and family and cooling off. I started working at Siphosethu Creche and Pre-School in 2017. I started working at Siphosethu Creche and Pre-School to try to make a living for myself and support my family. Since i have been working at Siphosethu Creche and Pre-School i have learned a lot of life-long skills, more particularly I have i learned about being patient as a person. I see myself being an entrepreneur, with skills and experience gained from Siphosethu Creche and Pre-School</p> -->
+                <span>Grade 10 Physics Stream</span>
             </div>
             <div class="box">
-                <img src="images/informativee.png" alt="">
-                <h3>Gabela Nhlakanipho</h3>
-                <span>Physics Stream</span>
-                <!-- <p>I have a passion for cooking and singing. I am a ward community member and community representative. I studied in Cape Peninsula doing Public Relations. I started working as a voluteer. I see my self changing the landscape of ECD and obid school, accommodation place to assist as a second home. Specifically as a community centre. </p> -->
+                <img src="images/anele.jpg" alt="">
+                <h3>Anele Ndlovu</h3>
+                <span>Grade 10 General Stream</span>
             </div>
+        </div>
+        <div class="flex-center">
+            <a href="students.html" class="btn" style="margin-top: 2rem;">See More</a>
         </div>
     </section>
 
     <!-- SERVICES -->
 
     <section class="services background" id="services">
-
-        <h1 class="heading"> What We Teach Your Children</h1>
-
+        <h1 class="heading">What We Teach Our Students</h1>
         <div class="box-container">
             <div class="box">
-                <img src="images/blockchainimg.jpg" alt="Algebra" style="object-position: top;">
+                <img src="images/math.jpg" alt="Mathematics" style="object-position: top;">
                 <div class="info">
-                    <a href=""><h3>Algebra</h3></a>
+                    <a href="math.html"><h3>Mathematics</h3></a>
                 </div>
             </div>
             <div class="box">
-                <img src="images/did.jpg" alt="Geometry" class="tours">
+                <img src="images/wp3847335.webp" alt="English" class="tours">
                 <div class="info">
-                    <a href=""><h3>Geometry</h3></a>
+                    <a href="english.html"><h3>English</h3></a>
                 </div>
             </div>
             <div class="box">
-                <img src="images/blockchain.jpg" style="object-position: top;" alt="2D and 3D shapes">
+                <img src="images/pattern.jpg" alt="Physics" class="tours">
                 <div class="info">
-                    <a href=""><h3>2D and 3D shapes</h3></a>
+                    <a href="physicalSciences.html"><h3>Physical Sciences</h3></a>
                 </div>
             </div>
             <div class="box">
-                <img src="images/block.jpg" alt="Trigonometry">
+                <img src="images/bright.jpg" alt="web Development">
                 <div class="info">
-                    <a href=""><h3>Trigonometry</h3></a>
+                    <a href="webDevelopment.html"><h3>Web Development</h3></a>
                 </div>
-            </div>
-            <div class="box">
-                <img src="images/key.jpg" alt="Financial Mathematics">
-                <div class="info">
-                    <a href=""><h3>Financial Mathematics</h3></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/web-design.webp" alt="HTML AND CSS">
-                <div class="info">
-                    <a href=""><h3>HTML AND CSS</h3></a>
-                </div> 
-            </div>
-            <div class="box">
-                <img src="images/minime.png" alt="Sequence and Series" style="object-fit: contain;">
-                <div class="info">
-                    <a href=""><h3>Sequence and Series</h3></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/background.png" alt="Functions and Graphs" class="tours">
-                <div class="info">
-                    <a href=""><h3>Functions and Graphs</h3></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/ecommerce1.webp" style="object-fit: cover;" alt="Probability and Data Handling">
-                <div class="info">
-                    <a href=""><h3>Probability and Data Handling</h3></a>
-                </div> 
             </div>
         </div>
     </section>
@@ -213,12 +195,31 @@
         </div>
     </div>
 
+    <!-- OUR TEAM -->
+
+    <section class="team" id="teachers">
+        <h1 class="heading">Our Amazing Team</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/tech-ceo.jpg" alt="">
+                <h3>Claude Monareng</h3>
+                <span>Founder, Head Tutor and Principal Coordinator</span>
+            </div>
+            <!-- <div class="box">
+                <img src="images/did.jpg" style="object-fit:cover;" alt="">
+                <h3>Musawakhe Shabangu</h3>
+                <span>Operations Officer</span>
+            </div> -->
+        </div>
+        <div class="flex-center">
+            <a href="aboutfounder.html" style="font-size: 1.8rem;" class="btn" id="btn">About Founder</a>
+        </div>
+    </section>
+
     <!-- TESTIMONIALS SECTION -->
 
-    <section class="testimonials" id="testimonials">
-    
+    <section class="testimonials background" id="testimonials">
         <h1 class="heading">What the Community says</h1>
-        
         <div class="box-container">
             <div class="box">
                 <div class="row">
@@ -228,7 +229,7 @@
                     </div> 
                     <div class="info">
                         <p>My name is Marc Leistner, im from Luxembourg, i first came to contact with the creche from their website and since then i loved it. I can't wait to visit it when i return back to South Africa</p>
-                        <p> - Former Deputy Chairman of the European Investment Bank for Southern Africa</p>
+                        <p>Former Deputy Chairman of the European Investment Bank for Southern Africa</p>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -240,12 +241,12 @@
             <div class="box">
                 <div class="row">
                     <div class="content">
-                        <img src="images/thumbnail.png" alt="">
-                        <h3>Lehlohonolo Monareng</h3>
+                        <img src="images/image2.jpeg" alt="">
+                        <h3>Tebogo Moseamedi</h3>
                     </div> 
                     <div class="info">
-                        <p>My Name is Lehlohonolo Monareng, im a resident from Newcastle, since i have been working with the creche for a while, I can say that they really care about children. The chidren are happy and engaged.</p>
-                        <p>- Wits Alumni and Former CEO and Co-Founder of Kewaa</p>
+                        <p>My Name is Tebogo Moseamedi, im a resident from Newcastle, since i have been working with the creche for a while, I can say that they really care about children. The chidren are happy and engaged.</p>
+                        <p>Python Developer, Data Scientist and CEO of Upartna</p>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -256,6 +257,58 @@
             </div> 
         </div>
     </section>
+    <div class="shape-container">
+        <div class="waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- TIMER -->
+
+    <div class="timer_body">
+        <div class="title">
+            <h1>Term Ends in...</h1>
+        </div>
+        <div class="flex-center">
+            <div id="time">
+                <div class="circle" style="color:#ff2972">
+                    <div class="dots day_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="dd"></circle>
+                    </svg>
+                    <div id="days">00 <br><span>Days</span></div>
+                </div>
+                <div class="circle" style="color:#fff">
+                    <div class="dots hr_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="hh"></circle>
+                    </svg>
+                    <div id="hours">00</div>
+                </div>
+                <div class="circle" style="color:#fee800">
+                    <div class="dots min_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="mm"></circle>
+                    </svg>
+                    <div id="minutes">00</div>
+                </div>
+                <div class="circle" style="color:#04fc43">
+                    <div class="dots sec_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="ss"></circle>
+                    </svg>
+                    <div id="seconds">00</div>
+                </div>
+            </div>
+        </div>
+        <h2 class="newYear">We <br><span>Rocked !!!</span></h2>    
+    </div>
 
     <!-- CONTACT SECTION -->
 
@@ -263,21 +316,21 @@
         <div class="row">
             <div class="contact-info">
                 <div class="box">
-                    <h3 class="heading">Contact Details</h3>
-                    <p> <i class="fas fa-map-marker-alt"></i> Newcastle, KwaZulu-Natal, South Africa</p>
-                    <p> <i class="fas fa-envelope"></i>Group CEO: Claude Monareng</p>
-                    <p> <i class="fas fa-email"></i> claude.monareng@gmail.com</p>
+                    <h3>Contact Details</h3>
+                    <p>Newcastle, KwaZulu-Natal, South Africa</p>
+                    <p>Group CEO: Claude Monareng</p>
+                    <p>claude.monareng@gmail.com</p>
                 </div>
                 <div class="box">
-                    <h3 class="heading">Operating Times</h3>
+                    <h3>Operating Times</h3>
                     <p>Mondays to Fridays: 16:00 - 17:00 </p>
-                    <p>Saturdays: Closed </p>
+                    <p>Saturdays: 10:00 - 12:00 </p>
                     <p>Sundays: Closed </p>
                     <p>Public Holidays: 09:00 - 12:00</p>
                 </div>
             </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d711.1079608889997!2d30.04350133918665!3d-27.755165898479923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sza!4v1723609538366!5m2!1sen!2sza" width="" max-height="" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2193.014436847214!2d30.15036524484236!3d-27.73217738559484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eee0a862723cf1d%3A0x7825bad0a2077048!2sDicks%20Halt%2C%20Newcastle%2C%202952!5e1!3m2!1sen!2sza!4v1737241885215!5m2!1sen!2sza" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <div class="shape-container">
         <div class="waves">
@@ -287,33 +340,113 @@
         </div>
     </div>
     
-    <div class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>Maths And Coding Academy</h3>
-                <P>Stars shine brighter in the dark</P>
+    <footer class="">
+        <div class="footer-container">
+            <div class="footer-company-info">
+                <div class="box">
+                    <h3>Category</h3>
+                    <a href="background.html ">About Us</a>
+                    <a href="vision.html">Our Vision, Mission and Values</a>
+                </div>
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="program.html">Our Programs and Operations</a>
+                    <a href="organizationStructure.html">Our Organization Structure</a>
+                </div>
+                <div class="box">
+                    <h3>Extra Links</h3>
+                    <a href="enroll.html">Enroll Now</a>
+                    <a href="schoolCalendar.html">Our School Calendar</a>
+                </div>
             </div>
-            <div class="box">
-                <h3>Quick Links</h3>
-                <a href="enroll.html"><i class="fas fa-caret-right"></i>Enroll Now</a>
-                <a href="schoolCalendar.html"><i class="fas fa-caret-right"></i>School Calendar</a>
+            <div class="about">
+                <h2>MONARENG ACADEMY</h2>
+                <p>Maths, Science and Digital Technology Excellence</p>
             </div>
-            <div class="box">
-                <h3>Category</h3>
-                <a href="background.html "><i class="fas fa-caret-right"></i>About Us</a>
-                <a href="vision.html"><i class="fas fa-caret-right"></i>Our Vision, Mission and Values</a>
-            </div>
-            <div class="box">
-                <h3>Extra Links</h3>
-                <a href="program.html"><i class="fas fa-caret-right"></i>Our Program</a>
-                <a href="organizationStructure.html"><i class="fas fa-caret-right"></i>Our Organization Structure</a>
+            <div class="footer-copyright">
+                <p>&#169 2024 by Meshack inc. All Rights Reserved.</p>
+                <p>Reg. No.: 2024/727172/07</p>
             </div>
         </div>
-        <div class="credit-container background">
-            <div class="credit">&#169 2024 <a href="https://claudemonareng.github.io/keyaa/"><span>Maths And Coding Academy</span></a></div>
-        </div>
-    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
 
+        // TIMER FEATURE
+        
+        let days = document.getElementById('days');
+        let hours = document.getElementById('hours');
+        let minutes = document.getElementById('minutes');
+        let seconds   = document.getElementById('seconds');
+        
+        let dd = document.getElementById('dd');
+        let hh = document.getElementById('hh');
+        let mm = document.getElementById('mm');
+        let ss = document.getElementById('ss');
+        
+        let day_dot = document.querySelector('.day_dot');
+        let hr_dot = document.querySelector('.hr_dot');
+        let min_dot = document.querySelector('.min_dot');
+        let sec_dot = document.querySelector('.sec_dot');
+        
+        let endDate = '3/28/2025 08:00:00';
+        
+        let x = setInterval(function(){
+            let now = new Date(endDate).getTime();
+            let countDown = new Date().getTime();
+            let distance = now - countDown;
+        
+            // time calculation for remaining days, hours and seconds
+        
+            let d = Math.floor(distance / (1000 * 60 * 60 * 24));
+        
+            let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        
+            let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        
+            let s = Math.floor((distance % (1000 * 60)) / (1000));
+        
+            // lets output the result in the elements with id
+        
+            days.innerHTML = d + "<br><span>Days</span>";
+            hours.innerHTML = h + "<br><span>Hours</span>";
+            minutes.innerHTML = m + "<br><span>Minutes</span>";
+            seconds.innerHTML = s + "<br><span>Seconds</span>";
+        
+            // lets animate stroke
+            dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+        
+            // 365 days in a year
+            hh.style.strokeDashoffset = 440 - (440 * h) / 24;
+        
+            // There is 24 hours in a day
+            mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+        
+            // There is 60 minutes in an hour
+            ss.style.strokeDashoffset = 440 -(440 * s) / 60;
+            // there is 60 seconds in a minute
+        
+            
+            // animate circle dots
+        
+            day_dot.style.transform = `rotateZ(${d * 0.986}deg`;
+            // 350deg / 365 days = 0.986
+            hr_dot.style.transform = `rotateZ(${h * 15}deg`;
+            // 360deg / 24 hrs = 15
+            min_dot.style.transform = `rotateZ(${m * 6}deg`;
+        
+            sec_dot.style.transform = `rotateZ(${s * 6}deg`;
+        
+            // write some text when countdown is over
+        
+            if(distance < 0){
+                clearInterval(x);
+                document.getElementById("time").style.display = 'none'
+        
+                document.querySelector(".newYear").style.display = 'block';
+            }
+        });
+    </script>
     <script src="index.js"></script>
 </body>
 </html>
