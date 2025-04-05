@@ -1074,7 +1074,7 @@ header .navbar a:hover{
 }
 
 .students .box-container .box{
-    flex: 1 1 20rem;
+    flex: 1 1 25rem;
     padding: 2rem 3rem;
     margin: 1rem;
     height: 28em;
@@ -1810,11 +1810,6 @@ footer .footer-copyright{
         font-size: 3rem;
     }
 
-    .home .content h1 span,
-    .home .content h1 span span{
-        /* font-size: 4.5rem; */
-    }
-
     .home .content h3{
         font-size: 2.5rem;
     }
@@ -1965,6 +1960,22 @@ footer .footer-copyright{
 
     .about .content p{
         text-align: justify;
+    }
+
+    /* SWIPER */
+
+    .swiper .swiper-wrapper .swiper-slide{
+        display: flex;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide p{
+        position: absolute;
+        color:#ffff;
+        width: 70%;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 2rem;
+        padding: 4%;
     }
 
     /* SERVICE */
