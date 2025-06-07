@@ -12,14 +12,12 @@
 <body>
     <header>
         <div class="logo-section">
-            <a href="index.html"><h3>Meshack<span> Academy</span></h3></a>
+            <a href="index.html"><h3>MESH<span>WEB</span></h3></a>
         </div>
         <div class="menu-btn"></div>
         <div class="navigation">
             <div class="navigation-items">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="branches.html">Branches</a>
                 <a href="people.html">Who is involved</a>
                 <a href="testimonials.html" >Testimonials</a>
                 <a href="contact.html">Contact</a>
@@ -32,12 +30,12 @@
     <section class="home background2" id="home">
         <div class="content">
             <div class="element">
-                <h1>Welcome <br> to <br> <span><span>Meshack</span>Academy</span></h1>
+                <h1>Welcome to <br><span> MESHACK ACADEMY</span></h1>
                 <div class="flex-center">
-                    <h3>Mathematics and Science Excellence</h3>
+                    <h3>Mathematics, Science and Digital Technology <br>Excellence</h3>
                 </div>
                 <div class="flex-center">
-                    <a href="about.html" class="btn" id="btn">Learn More</a>
+                    <a href="background.html" class="btn" id="btn">Learn More</a>
                 </div>
             </div>
         </div>
@@ -75,11 +73,8 @@
     <div class="swiper mySwiper">
         <h1 class="heading">News and Trends</h1>
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><p>We are commencing our year on the 10th of February, with great optimism and caution. We can't wait to welcome over 20 new students in the first two months.</p><img src="images/girl-doing-math.jpg"></div>
-            <div class="swiper-slide"><p>Please note that as of the first of June 2025, our school fees will start from R200 if you are enrolling for a single subject and R300 for two subjects.</p><img src="images/math2.jpg"></div>
-            <div class="swiper-slide"><img src="images/math-map.png"></div>
-            <div class="swiper-slide"><img src="images/hacked.jpg"></div>
-            <div class="swiper-slide"><img src="images/sphiwe-20190804-WA0012.jpg"></div>
+            <div class="swiper-slide"><p>We are commencing our year on the 10th of February, with great optimism and caution. We can't wait to welcome over 20 new students in the first two months.</p><img src="images/girl-doing-math.jpg">
+            </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -92,9 +87,9 @@
         <h1 class="heading">What We Teach Our Students</h1>
         <div class="box-container">
             <div class="box">
-                <img src="images/math.jpg" alt="Mathematics" style="object-position: top;">
+                <img src="images/math-map.png" alt="Mathematics" class="tours" style="object-position: top;">
                 <div class="info">
-                    <a href="math.html"><h3>Mathematics</h3></a>
+                    <a href="english.html"><h3>Mathematics</h3></a>
                 </div>
             </div>
             <div class="box">
@@ -104,15 +99,15 @@
                 </div>
             </div>
             <div class="box">
-                <img src="images/pattern.jpg" alt="Physics" class="tours">
+                <img src="images/math2.jpg" alt="Physics" class="tours">
                 <div class="info">
                     <a href="physicalSciences.html"><h3>Physical Sciences</h3></a>
                 </div>
             </div>
             <div class="box">
-                <img src="images/bright.jpg" alt="web Development">
+                <img src="images/team.jpg" alt="web Development">
                 <div class="info">
-                    <a href="webDevelopment.html"><h3>Web Development</h3></a>
+                    <a href="webDevelopment.html"><h3>Data Science</h3></a>
                 </div>
             </div>
         </div>
@@ -159,7 +154,70 @@
             </div> 
         </div>
     </section>
-    
+
+    <!-- OUR CLIENTS -->
+
+    <div class="our-client sub-section">
+        <h1 class="heading">Our Amazing Partners</h1>
+        <div class="container flex-center">
+            <div class="wrapper">
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item3"></div>
+                <div class="item item4"></div>
+                <div class="item item5"></div>
+                <div class="item item6"></div>
+                <div class="item item7"></div>
+                <div class="item item8"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TIMER -->
+
+    <div class="timer_body">
+        <div class="title">
+            <h1>Term 2 ends in...</h1>
+        </div>
+        <div class="flex-center">
+            <div id="time">
+                <div class="circle" style="color:#ff2972">
+                    <div class="dots day_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="dd"></circle>
+                    </svg>
+                    <div id="days">00 <br><span>Days</span></div>
+                </div>
+                <div class="circle" style="color:#fff">
+                    <div class="dots hr_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="hh"></circle>
+                    </svg>
+                    <div id="hours">00</div>
+                </div>
+                <div class="circle" style="color:#fee800">
+                    <div class="dots min_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="mm"></circle>
+                    </svg>
+                    <div id="minutes">00</div>
+                </div>
+                <div class="circle" style="color:#04fc43">
+                    <div class="dots sec_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="ss"></circle>
+                    </svg>
+                    <div id="seconds">00</div>
+                </div>
+            </div>
+        </div>
+        <h2 class="newYear">We <br><span>Rocked !!!</span></h2>    
+    </div>
+
     <footer class="background">
         <div class="footer-container">
             <div class="footer-company-info">
@@ -170,28 +228,135 @@
                 </div>
                 <div class="box">
                     <h3>Quick Links</h3>
-                    <a href="fees.html">Our Fees</a>
                     <a href="program.html">Our Programs and Operations</a>
                     <a href="organizationStructure.html">Our Organization Structure</a>
                 </div>
                 <div class="box">
                     <h3>Extra Links</h3>
-                    <a href="enroll.html">Enroll Now</a>
+                    <a href="enroll.html">Enrol Now</a>
                     <a href="schoolCalendar.html">Our School Calendar</a>
                 </div>
             </div>
             <div class="about">
-                <h2><span>Meshack </span> Academy</h2>
-                <p>Mathematics and <span> Science Excellence</span></p>
+                <h2><span>MESHACK</span>ACADEMY</h2>
+                <p>Mathematics, Science and Digital Technology Excellence</p>
             </div>
             <div class="footer-copyright">
-                <p>&#169 2025 by Meshack Web Solutions (Pty) Ltd. All Rights Reserved.</p>
+                <p>&#169 2025 by MESHWEB (Pty) Ltd. All Rights Reserved.</p>
                 <p>Reg. No.: 2024/727172/07</p>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        // now, we will fix navigation issue...menu close after clicked any link
+
+        function toggleMenu() {
+            menuBtn.classList.remove('active');
+            navigation.classList.remove('active');
+        }
+    </script>
+    <script>
+
+        // TIMER FEATURE
+        
+        let days = document.getElementById('days');
+        let hours = document.getElementById('hours');
+        let minutes = document.getElementById('minutes');
+        let seconds   = document.getElementById('seconds');
+        
+        let dd = document.getElementById('dd');
+        let hh = document.getElementById('hh');
+        let mm = document.getElementById('mm');
+        let ss = document.getElementById('ss');
+        
+        let day_dot = document.querySelector('.day_dot');
+        let hr_dot = document.querySelector('.hr_dot');
+        let min_dot = document.querySelector('.min_dot');
+        let sec_dot = document.querySelector('.sec_dot');
+        
+        let endDate = '6/27/2025 08:00:00';
+        
+        let x = setInterval(function(){
+            let now = new Date(endDate).getTime();
+            let countDown = new Date().getTime();
+            let distance = now - countDown;
+        
+            // time calculation for remaining days, hours and seconds
+        
+            let d = Math.floor(distance / (1000 * 60 * 60 * 24));
+        
+            let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        
+            let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        
+            let s = Math.floor((distance % (1000 * 60)) / (1000));
+        
+            // lets output the result in the elements with id
+        
+            days.innerHTML = d + "<br><span>Days</span>";
+            hours.innerHTML = h + "<br><span>Hours</span>";
+            minutes.innerHTML = m + "<br><span>Minutes</span>";
+            seconds.innerHTML = s + "<br><span>Seconds</span>";
+        
+            // ANIMATE STROKE
+            // 365 DAYS IN A YEAR
+
+            dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+        
+            // THERE IS 24 HOURS IN A DAY
+            
+            hh.style.strokeDashoffset = 440 - (440 * h) / 24;
     
-    <script src="index.js"></script>
+            // THERE IS 60 MINUTES IN AN HOUR
+
+            mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+        
+            // THERE IS 60 SECONDS IN A MINUTE
+
+            ss.style.strokeDashoffset = 440 -(440 * s) / 60;
+        
+            // ANIMATE CIRCLE DOTS
+            // 350deg / 365 days = 0.986
+
+            day_dot.style.transform = `rotateZ(${d * 0.986}deg`;
+
+            // 360deg / 24 hrs = 15
+
+            hr_dot.style.transform = `rotateZ(${h * 15}deg`;
+           
+            // 
+            min_dot.style.transform = `rotateZ(${m * 6}deg`;
+        
+            // 
+            sec_dot.style.transform = `rotateZ(${s * 6}deg`;
+        
+            // WRITE SOME TEXT WHEN COUNTDOWN IS OVER
+        
+            if(distance < 0){
+                clearInterval(x);
+                document.getElementById("time").style.display = 'none'
+                document.querySelector(".newYear").style.display = 'block';
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>

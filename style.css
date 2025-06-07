@@ -9,6 +9,54 @@ body {
 :root{
     --yellow: rgb(255, 255, 0);
     --white: #fff;
+    
+    --yellow: rgb(255, 255, 0);
+    --white: #fff;
+
+    /* MAIN THEME COLORS */
+
+    --first-color: #0e2431;
+    --second-color: #6a59d1;
+    --third-color: #777;
+
+    /* VARIANT COLORS */
+
+    --first-variant: rgb(104, 182, 27);
+    --second-variant: #7862f5;
+    --third-variant: rgb(184, 82, 235);
+
+    /* HOVER COLORS */
+
+    --hover-color: #614fd0;
+
+    /* BACKROUND COLORS */
+
+    --body-bg-color: #fefefe;
+    --body-bg-color: #fff;
+    --modal-bg-color: #fff;
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --transparent-color-01: rgba(0, 0, 0, 0.1);
+    --transparent-color-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+
+    /* COLOR FILTER */
+
+    --color-filter: invert(1);
+
+    /* BOX SHADOW */
+
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+
+    /* FONT SIZE */
+
+    --small-font-size: 0.9em;
+    --normal-font-size: 1em;
+
+    /* SCROLL BAR COLORS */
+
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
 }
 
 *{
@@ -77,7 +125,7 @@ body {
     fill: #FFFFFF;
 }
 
-/* Footer Waves */
+/* FOOTER WAVES */
 
 .footer-waves {
     position: absolute;
@@ -99,6 +147,8 @@ body {
 .footer-waves .shape-fill {
     fill: #FFFFFF;
 }
+
+/* END OF FOOTER WAVES */
 
 p{
     text-align: justify;
@@ -507,13 +557,16 @@ header .navbar a:hover{
 
 .home .content{
     border-radius: 10px;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.4));
     padding: 2em;
     justify-content: center;
     line-height: normal;
     width: 90%;
     height: 100%;
-    transform: translateY(4rem);
+}
+
+.home .content .element{
+    padding: 2rem;
 }
 
 .home .content h1{
@@ -527,19 +580,8 @@ header .navbar a:hover{
 
 .home .content h1 span{
     text-transform: uppercase;
-    font-size: 6.5rem;
     font-weight: 600;
-    background: linear-gradient(to top, transparent 0%, #fcfcfc 40%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
-    text-align: center;
-}
-
-.home .content h1 span span{
-    text-transform: uppercase;
-    font-weight: 600;
-    background: linear-gradient(to top, transparent 0%, rgba(0, 81, 255, 0.3) 40%);
+    background: linear-gradient(to top, transparent 0%,    rgba(142, 243, 75, 0.7) 40%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -660,62 +702,6 @@ header .navbar a:hover{
 .features .box-container .box p{
     color: #666;
     font-size: 1.4rem;
-}
-
-/* ABOUT SECTION */
-
-.about{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-}
-
-.about .image img{
-    flex: auto auto 50%;
-    width: 40vw;
-    min-height: 100%;
-    object-fit: contain;
-    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
-    border-radius: 5px;
-}
-
-.about .content{
-    flex: auto auto 50%;
-    align-items: center;
-}
-
-.about .content h3{
-    text-align: center;
-    color: blue;
-    margin: 2em;
-    font-size: 3.5rem;
-}
-
-.about .content .para{
-    transform: translateY(-6em);
-}
-
-.about .content p{
-    line-height: 2.1rem;
-    font-size: 1.7rem;
-    color: #666;
-    padding: 1rem 0;
-    text-wrap: wrap;
-    overflow-wrap: break-word;
-    text-align: justify;
-}
-
-.about .content .list{
-    transition: 1s;
-    margin: 0 1em;
-}
-
-.about .content .list:hover{
-    transform: translateX(2rem);
-    cursor: pointer;
-    margin: 0 1em;
 }
 
 /* PORTFOLIO SECTION */
@@ -942,31 +928,36 @@ header .navbar a:hover{
 
 /* OUR SERVICES */
 
-.branches .container {
+.services-second .container {
     position: relative;
     margin-top: -.4rem;
 }
   
-.branches .container .content {
+.services-second .container .content {
     min-width: 100%;
     max-height: 100%;
     margin-top: 1rem; 
-    margin: 1.5rem auto;
 }
   
-.branches .services-img {
+.services-second img {
     position: relative;
+    flex:  0 0 auto;
 }
   
-.branches .services-img img {
-    object-fit: cover;
+.services-second-img img {
+    object-fit: contain;
+    min-height: 100%;
     min-width: 100%;
-    height: 40rem;
+    height: 400px;
     width: 57rem;
-    border-radius: 2rem;
 }
 
-.branches .services-info .description {
+#web-development,
+#e-learning{
+    flex-direction: row-reverse;
+}
+
+.services-second-info .description {
     height: 480px;
     min-height: 100%;
     min-width: 100%;
@@ -974,26 +965,36 @@ header .navbar a:hover{
     padding: 12rem 2rem;
 }
   
-.branches .services-info .description h3 {
+.services-second-info .description h3 {
     min-width: 100%;
     font-size: 2.5rem;
     font-weight: 600;
     margin: 10px auto;
+    color: #202020;
+}
+
+.services-second-info .description h3 span {
+    color: var(--second-color);
+}
+
+.services-second-info .description h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 10px auto;
 }
   
-.branches .services-info .description p {
-    min-width: 100%;
-    color: #666;
+.services-second-info .description p {
+    color: var(--third-color);
     font-size: 1.7rem;
     margin-bottom: 15px;
     padding-bottom: 25px;
-    border-bottom: 2px solid #666;
+    border-bottom: 2px solid var(--line-color);
 }
 
-.branches .services-info .description ul li{
+.services-second-info .description ul li{
     font-size: 1.7rem;
     margin-bottom: 1rem;
-    color: #666;
+    color: var(--third-color);
 }
 
 /* LEARNERS SECTION */
@@ -1295,6 +1296,108 @@ header .navbar a:hover{
     color: #666;
     padding: 2rem;
     font-size: 1.4rem;
+}
+
+/* OUR CLIENTS */
+
+.wrapper{
+    width: 100%;
+    max-width: 1536px;
+    margin-right: 2em;
+    margin-inline: auto;
+    position: relative;
+    height: 400px;
+    margin-top: 5rem;
+    overflow-x: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0)
+    );
+}
+
+@keyframes scrollLeft{
+    to{
+        left: -200px;
+    }
+}
+
+@keyframes scrollRight{
+    to{
+        right: -200px;
+    }
+}
+
+.wrapper .item{
+    color: #fff;
+    width: 200px;
+    height: 180px;
+    border-radius: 4px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%); 
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wrapper .item1{
+    animation-delay: calc(30s / 8 *(8 - 1) * -1);
+    background-image: url(./images/kusaselihle.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .item2{
+    animation-delay: calc(30s / 8 *(8 - 2) * -1);
+    background-image: url(./images/vulindlela.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .item3{
+    animation-delay: calc(30s / 8 *(8 - 3) * -1);
+    background-image: url(./images/ukukhanyakude.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: difference;
+}
+
+.wrapper .item4{
+    animation-delay: calc(30s / 8 *(8 - 4) * -1);
+    background-image: url(./images/bcxv2.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.wrapper .item5{
+    animation-delay: calc(30s / 8 *(8 - 5) * -1);
+    background-image: url(./images/telkom.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .item6{
+    animation-delay: calc(30s / 8 *(8 - 6) * -1);
+    background-image: url(./images/siphosethu.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .item7{
+    animation-delay: calc(30s / 8 *(8 - 7) * -1);
+    background-image: url(./images/conlog.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .item8{
+    animation-delay: calc(30s / 8 *(8 - 8) * -1);
+    background-image: url(./images/joburgv2.png);
+    background-position: center;
+    background-size: cover;
 }
 
 /* TIMER FEATURE */
@@ -1681,8 +1784,8 @@ footer .footer-copyright{
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;
-        margin-top: 18rem;
-        margin-right: 25rem;
+        margin-top: 30rem;
+        margin-right: 20rem;
     }
 
     /* ATTACHMENT */
@@ -1777,13 +1880,27 @@ footer .footer-copyright{
         min-height: 5em;
     }
 
+    header .navigation.active .navigation-items{ 
+        background: #fff;
+        width: 600px;
+        height: 50%;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+        overflow-y: hidden;
+    }
+
     .menu-btn.active{
         z-index: 999;
         background: url(./images/close.png)no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;
-        margin-top: 18rem;
+        margin-top: 45rem;
         margin-right: 6rem;
     }
 

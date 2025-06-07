@@ -10,14 +10,12 @@
 <body>
     <header class="subheader">
         <div class="logo-section">
-            <a href="index.html"><h3>Meshack<span> Academy</span></h3></a>
+            <a href="index.html"><h3>MESH<span>WEB</span></h3></a>
         </div>
         <div class="menu-btn"></div>
         <div class="navigation">
             <div class="navigation-items">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="branches.html">Branches</a>
                 <a href="people.html">Who is involved</a>
                 <a href="testimonials.html" >Testimonials</a>
                 <a href="contact.html">Contact</a>
@@ -34,24 +32,14 @@
                 <h3>Grade 12</h3>
                 <div class="grade">
                     <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Noxolo Dlamini</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
                         <img src="images/Slindile.jpg" alt="">
                         <h3>Slindokuhle Phungwayo</h3>
                         <span>Physics Stream</span>
                     </div>
-                </div>
-            </div>
-            <div class="grade-container">
-                <h3>Grade 11</h3>
-                <div class="grade">
                     <div class="box">
                         <img src="images/informativee.png" alt="">
-                        <h3>Akhona Mbili</h3>
-                        <span>General Stream</span>
+                        <h3>Khethelo Sithole</h3>
+                        <span>Physics Stream</span>
                     </div>
                 </div>
             </div>
@@ -59,27 +47,12 @@
                 <h3>Grade 10</h3>
                 <div class="grade">
                     <div class="box">
-                        <img src="images/bongalethu.jpg" alt="">
-                        <h3>Bongalethu Mlambo</h3>
-                        <span>Accounting Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/Gabela.jpg" alt="">
-                        <h3>Nhlakanipho Gabela</h3>
+                        <img src="images/nkaz.jpg" alt="">
+                        <h3>Nokwazi Phungwayo</h3>
                         <span>Physics Stream</span>
                     </div>
                     <div class="box">
-                        <img src="images/nokwazi.jpg" alt="">
-                        <h3>Nokwazi Nxumalo</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Mpume Ndlovu</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/seluleko.jpg" style="object-position: center;" alt="">
+                        <img src="images/seluk - Copy.jpg" style="object-fit: cover;" alt="">
                         <h3>Seluleko Mbatha</h3>
                         <span>Physics Stream</span>
                     </div>
@@ -120,41 +93,6 @@
                     </div>
                 </div>
             </div>
-            <div class="grade-container">
-                <h3>Grade 9</h3>
-                <div class="grade">
-                    <div class="box">
-                        <img src="images/neliswa1.jpg" alt="">
-                        <h3>Neliswa Khanyile</h3>
-                        <span>Pre-Physics Stream</span>
-                    </div>   
-                    <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Amahle Ngubane</h3>
-                        <span>Pre-Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Fanele Mdakane</h3>
-                        <span>General</span>
-                    </div>   
-                    <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Cebisile Sibiya</h3>
-                        <span>General</span>
-                    </div> 
-                </div>
-            </div>
-            <div class="grade-container">
-                <h3>Grade 8</h3>
-                <div class="grade">
-                    <div class="box">
-                        <img src="images/Simangaliso.jpg" alt="">
-                        <h3>Simangaliso Khubo</h3>
-                        <span>General</span>
-                    </div> 
-                </div>
-            </div>
         </div>
     </section>
 
@@ -168,26 +106,47 @@
                 </div>
                 <div class="box">
                     <h3>Quick Links</h3>
-                    <a href="fees.html">Our Fees</a>
                     <a href="program.html">Our Programs and Operations</a>
                     <a href="organizationStructure.html">Our Organization Structure</a>
                 </div>
                 <div class="box">
                     <h3>Extra Links</h3>
-                    <a href="enroll.html">Enroll Now</a>
+                    <a href="enroll.html">Enrol Now</a>
                     <a href="schoolCalendar.html">Our School Calendar</a>
                 </div>
             </div>
             <div class="about">
-                <h2><span>Meshack </span> Academy</h2>
-                <p>Mathematics and <span> Science Excellence</span></p>
+                <h2><span>MESHACK </span>ACADEMY</h2>
+                <p>Mathematics, Science and Digital Technology Excellence</p>
             </div>
             <div class="footer-copyright">
-                <p>&#169 2025 by Meshack Web Solutions (Pty) Ltd. All Rights Reserved.</p>
+                <p>&#169 2025 by MESHWEB (Pty) Ltd. All Rights Reserved.</p>
                 <p>Reg. No.: 2024/727172/07</p>
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        // now, we will fix navigation issue...menu close after clicked any link
+
+        function toggleMenu() {
+            menuBtn.classList.remove('active');
+            navigation.classList.remove('active');
+        }
+    </script>
+    <script src="/js/index.js"></script>
 </body>
 </html>

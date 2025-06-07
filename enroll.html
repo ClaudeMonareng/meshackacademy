@@ -11,14 +11,12 @@
 <body>
     <header class="subheader">
         <div class="logo-section">
-            <a href="index.html"><h3>Meshack<span> Academy</span></h3></a>
+            <a href="index.html"><h3>MESH<span>WEB</span></h3></a>
         </div>
         <div class="menu-btn"></div>
         <div class="navigation">
             <div class="navigation-items">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="branches.html">Branches</a>
                 <a href="people.html">Who is involved</a>
                 <a href="testimonials.html" >Testimonials</a>
                 <a href="contact.html">Contact</a>
@@ -53,26 +51,47 @@
                 </div>
                 <div class="box">
                     <h3>Quick Links</h3>
-                    <a href="fees.html">Our Fees</a>
                     <a href="program.html">Our Programs and Operations</a>
                     <a href="organizationStructure.html">Our Organization Structure</a>
                 </div>
                 <div class="box">
                     <h3>Extra Links</h3>
-                    <a href="enroll.html">Enroll Now</a>
+                    <a href="enroll.html">Enrol Now</a>
                     <a href="schoolCalendar.html">Our School Calendar</a>
                 </div>
             </div>
-            <div class="about">
-                <h2><span>Meshack </span> Academy</h2>
-                <p>Mathematics and <span> Science Excellence</span></p>
+                <div class="about">
+                <h2><span>MESHACK </span>ACADEMY</h2>
+                <p>Mathematics, Science and Digital Technology Excellence</p>
             </div>
             <div class="footer-copyright">
-                <p>&#169 2025 by Meshack Web Solutions (Pty) Ltd. All Rights Reserved.</p>
+                <p>&#169 2025 by MESHWEB (Pty) Ltd. All Rights Reserved.</p>
                 <p>Reg. No.: 2024/727172/07</p>
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        // now, we will fix navigation issue...menu close after clicked any link
+
+        function toggleMenu() {
+            menuBtn.classList.remove('active');
+            navigation.classList.remove('active');
+        }
+    </script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
