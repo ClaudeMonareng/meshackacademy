@@ -4,6 +4,7 @@ html,
 body {
     position: relative;
     height: 100%;
+    margin-inline: auto;
 }
 
 :root{
@@ -57,6 +58,12 @@ body {
     --scroll-bar-color: #c5cadf;
     --scroll-thumb-color: #70768a;
     --scroll-thumb-hover-color: #454f6b;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
 }
 
 *{
@@ -197,24 +204,11 @@ section{
     font-size: 3.5rem;
 }
 
-h1{
-    color: rgba(0, 17, 255, 0.3);
-    padding: 1rem;
-    font-size: 5rem;
-    text-align: center;
-}
-
 h3{
     color: rgba(0, 17, 255, 0.3);
     padding: 1rem;
     font-size: 3rem;
     text-align: center;
-}
-
-h4{
-    color: rgba(0, 17, 255, 0.3);
-    padding: 1rem;
-    font-size: 2rem;
 }
 
 /* BUTTTONS */
@@ -224,19 +218,19 @@ h4{
     background: #600a68;
     color: #fff;
     border-radius: 12px;
+    font-size: 1.7rem;
 }
 
 .btn{
     padding: 15px 40px;
     z-index: 0;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     border: none;
     outline: none;
     color: #fff;
     cursor: pointer;
     position: relative;
     border-radius: 12px;
-    position: relative;
     background: #600a68;
 }
 
@@ -561,7 +555,7 @@ header .navbar a:hover{
     padding: 2em;
     justify-content: center;
     line-height: normal;
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
@@ -571,22 +565,23 @@ header .navbar a:hover{
 
 .home .content h1{
     text-align: center;
-    font-size: 5rem;
+    font-size: calc(3vw + 3vh);
     color:#fcfcfc;
     text-align: center;
-    overflow-wrap:break-word;
+    width: 90%;
     text-transform: uppercase;
 }
 
 .home .content h1 span{
     text-transform: uppercase;
     font-weight: 600;
-    background: linear-gradient(to top, transparent 0%,    rgba(142, 243, 75, 0.7) 40%);
+    background: linear-gradient(to top, transparent 0%,rgba(142, 243, 75, 0.7) 40%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     opacity: 1;
     margin-right: 1.5rem;
+    width: 90%;
 }
 
 .home .content h3{
@@ -594,7 +589,7 @@ header .navbar a:hover{
     color: #ffffff;
     text-align: center;
     line-height: normal;
-    width: 90%;
+    font-size: calc(1.5vw + 1.5vh);
 }
 
 /* SWIPER */
@@ -879,6 +874,59 @@ header .navbar a:hover{
     font-size: 2rem;
 }
 
+/* TESTIMONIALS SECTION */
+
+.testimonials .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonials .box-container .box{
+    flex: 1 1 27rem;
+    padding: 2rem 3rem;
+    margin: 1rem;
+    height: 26rem;
+    max-height: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-align: center;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s ease-in;
+    overflow-y: hidden;
+}
+
+.testimonials .box-container .box:hover{
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.testimonials .box-container .box img{
+    height: 12rem;
+    width: 12rem;
+    padding: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonials .box-container .box h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.testimonials .box-container .box span{
+    font-size: 1.7rem;
+    color: var(--red);
+}
+
+.testimonials .box-container .box p{
+    color: #666;
+    font-size: 1.7rem;
+}
+
 /* ABOUT FOUNDER */
 
 .about-founder{
@@ -900,11 +948,10 @@ header .navbar a:hover{
     align-items: center;
 }
 
-.about-founder .content h3{
+.about-founder .content h1{
     text-align: center;
-    color: blue;
-    margin: 2em;
     font-size: 3.5rem;
+    margin-bottom: 8rem;
 }
 
 .about-founder .content .para{
@@ -1061,7 +1108,7 @@ header .navbar a:hover{
     font-size: 2rem;
 }
 
-/* LEARNERS PAGE  */
+/* STUDENTS PAGE */
 
 .students{
     position: relative;
@@ -1236,76 +1283,9 @@ header .navbar a:hover{
     margin-bottom: 1rem;
 }
 
-/* BRANCHES */
-
-.branches p{
-    text-align: center;
-    font-size: 2rem;
-    color: #666;
-    width: 80%;
-}
-
-/* TESTIMONIAL SECTION */
-
-.testimonials .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.testimonials .box-container .box{
-    line-height:normal;
-    flex: 1 1 27rem;
-    padding: 2rem 3rem;
-    margin: 1rem;
-    height: 23em;
-    max-height: 100%;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    border: .1rem solid rgba(0, 0, 0, .3);
-    border-radius: 1rem;
-    text-align: center;
-    background-color: rgba(255, 255, 255);
-    overflow-y: hidden;
-}
-
-.testimonials .box-container .box:hover{
-    transform: scale(1.015);
-    overflow-y: scroll;
-    scrollbar-width: none;
-}
-
-.testimonials .box-container .box .row{
-    display:flex;
-}
-
-.testimonials .box-container .box img{
-    height: 12rem;
-    width: 12rem;
-    padding: 1rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.testimonials .box-container .box h3{
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.testimonials .box-container .box span{
-    font-size: 1.7rem;
-    color: var(--red);
-}
-
-.testimonials .box-container .box p{
-    color: #666;
-    padding: 2rem;
-    font-size: 1.4rem;
-}
-
 /* OUR CLIENTS */
 
-.wrapper{
+.our-client .container .wrapper{
     width: 100%;
     max-width: 1536px;
     margin-right: 2em;
@@ -1335,7 +1315,7 @@ header .navbar a:hover{
     }
 }
 
-.wrapper .item{
+.our-client .container .wrapper .item{
     color: #fff;
     width: 200px;
     height: 180px;
@@ -1348,21 +1328,21 @@ header .navbar a:hover{
     animation-iteration-count: infinite;
 }
 
-.wrapper .item1{
+.our-client .container .wrapper .item1{
     animation-delay: calc(30s / 8 *(8 - 1) * -1);
     background-image: url(./images/kusaselihle.png);
     background-position: center;
     background-size: cover;
 }
 
-.wrapper .item2{
+.our-client .container .wrapper .item2{
     animation-delay: calc(30s / 8 *(8 - 2) * -1);
-    background-image: url(./images/vulindlela.png);
+    background-image: url(./images/vulindlelav2.png);
     background-position: center;
     background-size: cover;
 }
 
-.wrapper .item3{
+.our-client .container .wrapper .item3{
     animation-delay: calc(30s / 8 *(8 - 3) * -1);
     background-image: url(./images/ukukhanyakude.jpg);
     background-position: center;
@@ -1370,35 +1350,35 @@ header .navbar a:hover{
     background-blend-mode: difference;
 }
 
-.wrapper .item4{
+.our-client .container .wrapper .item4{
     animation-delay: calc(30s / 8 *(8 - 4) * -1);
     background-image: url(./images/bcxv2.png);
     background-position: center;
     background-size: contain;
 }
 
-.wrapper .item5{
+.our-client .container .wrapper .item5{
     animation-delay: calc(30s / 8 *(8 - 5) * -1);
     background-image: url(./images/telkom.png);
     background-position: center;
     background-size: cover;
 }
 
-.wrapper .item6{
+.our-client .container .wrapper .item6{
     animation-delay: calc(30s / 8 *(8 - 6) * -1);
     background-image: url(./images/siphosethu.png);
     background-position: center;
     background-size: cover;
 }
 
-.wrapper .item7{
+.our-client .container .wrapper .item7{
     animation-delay: calc(30s / 8 *(8 - 7) * -1);
     background-image: url(./images/conlog.png);
     background-position: center;
     background-size: cover;
 }
 
-.wrapper .item8{
+.our-client .container .wrapper .item8{
     animation-delay: calc(30s / 8 *(8 - 8) * -1);
     background-image: url(./images/joburgv2.png);
     background-position: center;
@@ -1595,13 +1575,15 @@ footer a {
 .footer-container .about h2 {
     font-size: 4em;
     font-weight: 600;
-    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.7) 50%);
+    /* background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.7) 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0.8;
+    opacity: 0.8; */
     text-transform: uppercase;
     text-align: center;
     margin: 1rem auto;
+    width: 90%;
+
 }
 
 .footer-container .about h2 span{
@@ -2042,6 +2024,12 @@ footer .footer-copyright{
        transform: translateX(0);
        /* margin: auto 1rem; */
        width: 90%;
+    }
+
+    /* OUR CLIENTS */
+
+    .our-client{
+        display: none;
     }
     
     /* TRENDS AND NEWS */
