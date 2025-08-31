@@ -4,98 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/MA.png">
-    <title>Students | Meshack Academy</title>
+    <title>Students | Meshack Monareng Academy</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: #e7f2fd;">
+    
+    <!-- HEADER -->
+
     <header class="subheader">
-          <div class="logo-section">
-            <a href="index.html"><h3>MESHACK<span> ACADEMY</span></h3></a>
-        </div>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <div class="navigation-items">
-                <a href="index.html">Home</a>
-                <a href="people.html">Who is involved</a>
-                <a href="testimonials.html" >Testimonials</a>
-                <a href="contact.html">Contact</a>
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <h3 style="color: rgb(236, 228, 208);font-size: 2em;">MESHACK MONARENG <span><br>ACADEMY</span></h3>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <div class="nav-menu-btn"></div>
+                    <div class="nav-close-btn"></div>
+                </div>
             </div>
-        </div>
+
+            <!-- NAV MENU -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <!-- DROPDOWN 1-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">About Us +</div>
+                        <ul class="dropdown__menu">
+                            <li><a href="background.html" class="dropdown__link">Background</a></li>
+                            <li><a href="vision.html" class="dropdown__link">Vision</a></li>  
+                            <li><a href="students.html" class="dropdown__link">Students</a></li>       
+                            <!-- DROPDOWN SUBMENU-->                        
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link" style="cursor: pointer;">More +</div>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="aboutfounder.html" class="dropdown__sublink">Founder</a></li>
+                                    <li><a href="staff.html" class="dropdown__sublink">Staff</a></li>
+                                    <li><a href="organizationStructure.html" class="dropdown__sublink">Governance</a></li>
+                                </ul>
+                            </li>       
+                        </ul>
+                    </li>
+                    <li><a href="testimonials.html" class="nav__link">Testimonials</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div> 
+        </nav>
     </header>
 
-    <!-- STUDENTS -->
+    <!-- FILTER BUTTONS -->
+    <h1 class="heading" style="text-align: center; margin-top: 10rem;">2025 COHORT</h1>
 
-    <section class="students" id="learners">
-        <h1>Our Class Of 2025</h1>
-        <div class="box-container">
-            <div class="grade-container">
-                <h3>Grade 12</h3>
-                <div class="grade">
-                    <div class="box">
-                        <img src="images/Slindile.jpg" alt="">
-                        <h3>Slindokuhle Phungwayo</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Khethelo Sithole</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                </div>
-            </div>
-            <div class="grade-container">
-                <h3>Grade 10</h3>
-                <div class="grade">
-                    <div class="box">
-                        <img src="images/nkaz.jpg" alt="">
-                        <h3>Nokwazi Phungwayo</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/seluk - Copy.jpg" style="object-fit: cover;" alt="">
-                        <h3>Seluleko Mbatha</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/Sithembiso.jpg" alt="">
-                        <h3>Sithembiso Ntombela</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Bandile Madlopha</h3>
-                        <span>Physics Stream</span>
-                    </div>  
-                    <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Khethelo Mavimbela</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/anele.jpg" alt="">
-                        <h3>Anele Ndlovu</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/Cebolenkosi.webp" alt="">
-                        <h3>Cebolenkosi Sithole</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Swazi Mbatha</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                    <div class="box">
-                        <img src="images/informativee.png" alt="">
-                        <h3>Luthando Magwaza</h3>
-                        <span>Physics Stream</span>
-                    </div>
-                </div>
+    <div class="filter-buttons">
+        <button class="active" data-name="all">Show All</button>
+        <button data-name="grade10">Grade 10</button>
+        <button data-name="grade11">Grade 11</button>
+        <button data-name="grade12">Grade 12</button>
+        <button data-name="webdev">Web Development</button>
+    </div>
+
+    <!-- IMAGES CARDS -->
+    
+    <div class="filterable-cards">
+        <div class="card" data-name="grade10">
+            <img src="./images/Sithembiso.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Sithembiso Ntombela</h6>
+                <p class="card-text"></p>
             </div>
         </div>
-    </section>
-
+        <div class="card" data-name="grade10">
+            <img src="./images/Cebolenkosi.jpg" alt="" style="object-position: top;">
+            <div class="card-body">
+                <h6 class="card-title">Cebolenkosi Sithole</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade10">
+            <img src="./images/anele.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Anele Ndlovu</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade12">
+            <img src="./images/Slindile.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Slindokuhle Phungywayo</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="webdev">
+            <img src="./images/Slindile.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Slindokuhle Phungywayo</h6>
+                <!-- <p class="card-text">She is currently involved in Learning Front-End Web Development. Her curriculum includes basic HTML, CSS, Javascript and Frameworks in React and Angular.</p> -->
+            </div>
+        </div>
+        <div class="card" data-name="grade10">
+            <img src="./images/seluleko.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Seluleko Mbatha</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade10">
+            <img src="./images/nkaz.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Nokwazi Phungwayo</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade10">
+            <img src="./images/iframe_bg.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Khethelo Mavimbela</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade10">
+            <img src="./images/Bandile.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Bandile Madlopha</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade10">
+            <img src="./images/iframe_bg.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Luthando Magwaza</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade10">
+            <img src="./images/iframe_bg.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Swazi Mbatha</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade12">
+            <img src="./images/iframe_bg.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Khethelo Sithole</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade10">
+            <img src="./images/iframe_bg.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Neliswa Khanyile</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" data-name="grade12">
+            <img src="./images/iframe_bg.jpg" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Amahle Ngubane</h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
     <footer class="background">
         <div class="footer-container">
             <div class="footer-company-info">
@@ -106,7 +175,6 @@
                 </div>
                 <div class="box">
                     <h3>Quick Links</h3>
-                    <a href="program.html">Our Programs and Operations</a>
                     <a href="organizationStructure.html">Our Organization Structure</a>
                 </div>
                 <div class="box">
@@ -125,28 +193,34 @@
             </div>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
     <script>
-        window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-        });
+        // SELECT ALL FILTER BUTTONS AND FITERABLE CARDS
+
+        const filterButtons = document.querySelectorAll(".filter-buttons button");
+        const filterableCards = document.querySelectorAll(".filterable-cards .card");
+
+        // DEFINE THE FILTERCARDS FUNCTION
+
+        const filterCards = e => {
+            document.querySelector(".active").classList.remove("active");
+            e.target.classList.add("active");
+
+            // ITERATE OVER EACH FILTERABLE CARD
+            filterableCards.forEach(card => {
+                
+                // ADD "HIDE" CLASS TO HIDE THE CARD INITIALLY
+                card.classList.add("hide"); 
+
+                // CHECK IF THE CARD MATCHES THE SELECTED FILTER OR "ALL" IS SELECTED
+                if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
+                    card.classList.remove("hide");
+                }
+            });
+        };
+
+        // ADD CLICK EVENT LISTENER TO EACH FILTER BUTTON
+        filterButtons.forEach(button => button.addEventListener("click", filterCards));
     </script>
-    <script>
-        const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
-
-        menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
-
-        // now, we will fix navigation issue...menu close after clicked any link
-
-        function toggleMenu() {
-            menuBtn.classList.remove('active');
-            navigation.classList.remove('active');
-        }
-    </script>
-    <script src="/js/index.js"></script>
 </body>
 </html>

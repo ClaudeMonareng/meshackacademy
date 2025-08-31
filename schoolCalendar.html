@@ -4,27 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/MA.png">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>School Calendar | Meshack Academy</title>
+    <title>School Calendar | Meshack Monareng Academy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="subheader">
-          <div class="logo-section">
-            <a href="index.html"><h3>MESHACK<span> ACADEMY</span></h3></a>
-        </div>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <div class="navigation-items">
-                <a href="index.html">Home</a>
-                <a href="people.html">Who is involved</a>
-                <a href="testimonials.html" >Testimonials</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </header>
+<section>
+    
+    <!-- HEADER -->
 
-    <!-- CALENDAR -->
+    <header class="subheader">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <h3 style="color: rgb(236, 228, 208);font-size: 2em;">MESHACK MONARENG <span><br>ACADEMY</span></h3>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <div class="nav-menu-btn"></div>
+                    <div class="nav-close-btn"></div>
+                </div>
+            </div>
+
+            <!-- NAV MENU -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <!-- DROPDOWN 1-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">About Us +</div>
+                        <ul class="dropdown__menu">
+                            <li><a href="background.html" class="dropdown__link">Background</a></li>
+                            <li><a href="vision.html" class="dropdown__link">Vision</a></li>  
+                            <li><a href="students.html" class="dropdown__link">Students</a></li>       
+                            <!-- DROPDOWN SUBMENU-->                        
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link" style="cursor: pointer;">More +</div>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="aboutfounder.html" class="dropdown__sublink">Founder</a></li>
+                                    <li><a href="staff.html" class="dropdown__sublink">Staff</a></li>
+                                    <li><a href="organizationStructure.html" class="dropdown__sublink">Governance</a></li>
+                                </ul>
+                            </li>       
+                        </ul>
+                    </li>
+                    <li><a href="testimonials.html" class="nav__link">Testimonials</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
 
     <section class="calendar" id="teacher">
     
@@ -107,57 +134,34 @@
             </div>
         </div>
     </section>
-    <footer class="background">
-        <div class="footer-container">
-            <div class="footer-company-info">
-                <div class="box">
-                    <h3>Category</h3>
-                    <a href="background.html ">About Us</a>
-                    <a href="vision.html">Our Vision, Mission and Values</a>
+        <footer class="background">
+            <div class="footer-container">
+                <div class="footer-company-info">
+                    <div class="box">
+                        <h3>Category</h3>
+                        <a href="background.html ">About Us</a>
+                        <a href="vision.html">Our Vision, Mission and Values</a>
+                    </div>
+                    <div class="box">
+                        <h3>Quick Links</h3>
+                        <a href="organizationStructure.html">Our Organization Structure</a>
+                    </div>
+                    <div class="box">
+                        <h3>Extra Links</h3>
+                        <a href="enroll.html">Enrol Now</a>
+                        <a href="schoolCalendar.html">Our School Calendar</a>
+                    </div>
                 </div>
-                <div class="box">
-                    <h3>Quick Links</h3>
-                    <a href="program.html">Our Programs and Operations</a>
-                    <a href="organizationStructure.html">Our Organization Structure</a>
+                <div class="about">
+                    <h2>MESHACK ACADEMY</h2>
+                    <p>Mathematics, Science and Digital Technology Excellence</p>
                 </div>
-                <div class="box">
-                    <h3>Extra Links</h3>
-                    <a href="enroll.html">Enrol Now</a>
-                    <a href="schoolCalendar.html">Our School Calendar</a>
+                <div class="footer-copyright">
+                    <p>&#169 2025 by Meshack Web Solutions (Pty) Ltd. All Rights Reserved.</p>
+                    <p>Reg. No.: 2024/727172/07</p>
                 </div>
             </div>
-            <div class="about">
-                <h2>MESHACK ACADEMY</h2>
-                <p>Mathematics, Science and Digital Technology Excellence</p>
-            </div>
-            <div class="footer-copyright">
-                <p>&#169 2025 by Meshack Web Solutions (Pty) Ltd. All Rights Reserved.</p>
-                <p>Reg. No.: 2024/727172/07</p>
-            </div>
-        </div>
-    </footer>
-    <script>
-        window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-        });
-    </script>
-    <script>
-        const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
-
-        menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
-
-        // now, we will fix navigation issue...menu close after clicked any link
-
-        function toggleMenu() {
-            menuBtn.classList.remove('active');
-            navigation.classList.remove('active');
-        }
-    </script>
-    <script src="/js/index.js"></script>
+        </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

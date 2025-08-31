@@ -1,320 +1,393 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./images/MA.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Meshack Academy | Official Website </title>
-</head>
-<body>
-    <header>
-        <div class="logo-section">
-            <a href="index.html"><h3>MESHACK<span> ACADEMY</span></h3></a>
-        </div>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <div class="navigation-items">
-                <a href="index.html">Home</a>
-                <a href="people.html">Who is involved</a>
-                <a href="testimonials.html" >Testimonials</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./images/MA.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <title>Meshack Monareng Academy | Official Website </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="loadOverlay" style="background-color: #333; position: absolute; top: 0px; width: 100%; height:100%; z-index: 2000;"></div>
+        
+        <!-- HEADER -->
 
-    <!-- HOME -->
-
-    <section class="home background2" id="home">
-        <div class="content">
-            <div class="element">
-                <h1>Welcome to <br> <span>MESHACK ACADEMY</span> </h1>
-                <div class="flex-center">
-                    <h3>Mathematics, Science and Digital Technology <br>Excellence</h3>
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo">
+                        <h3 style="color: rgb(236, 228, 208);font-size: 2em;">MESHACK MONARENG <span><br>ACADEMY</span></h3>
+                    </a>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <div class="nav-menu-btn"></div>
+                        <div class="nav-close-btn"></div>
+                    </div>
                 </div>
-                <div class="flex-center">
-                    <a href="background.html" class="btn" id="btn">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- FEATURES -->
+                <!-- NAV MENU -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Home</a></li>
+                        <!-- DROPDOWN 1-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">About Us +</div>
+                            <ul class="dropdown__menu">
+                                <li><a href="background.html" class="dropdown__link">Background</a></li>
+                                <li><a href="vision.html" class="dropdown__link">Vision</a></li>  
+                                <li><a href="students.html" class="dropdown__link">Students</a></li>       
+                                <!-- DROPDOWN SUBMENU-->                        
+                                <li class="dropdown__subitem">
+                                    <div class="dropdown__link" style="cursor: pointer;">More +</div>
+                                    <ul class="dropdown__submenu">
+                                        <li><a href="aboutfounder.html" class="dropdown__sublink">Founder</a></li>
+                                        <li><a href="staff.html" class="dropdown__sublink">Staff</a></li>
+                                        <li><a href="organizationStructure.html" class="dropdown__sublink">Governance</a></li>
+                                    </ul>
+                                </li>       
+                            </ul>
+                        </li>
+                        <li><a href="testimonials.html" class="nav__link">Testimonials</a></li>
+                        <li><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </div> 
+            </nav>
+        </header>
 
-    <section class="features" id="features">
-        <h1 class="heading">Why Students Choose Us</h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="images/certified.png" alt="">
-                <div class="info">
-                    <h3>Personalised Attention</h3>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/remote.png" alt="">
-                <div class="info">
-                    <h3>Access to WiFi</h3>
-                    <p></p>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/team.png" alt="">
-                <div class="info">
-                    <h3>Tailored Assessments And Feedback</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TRENDS AND NEWS -->
-
-    <div class="swiper mySwiper">
-        <h1 class="heading">News and Trends</h1>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><p>We are hosting the Academy's first parents' meeting on the 8th of June 2025. This is in keeping with our values of prioritising a valuable learner-coach-parents relationship to enhance our quality output.</p><img src="images/girl-doing-math.jpg">
-            </div>
-        </div>
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div> -->
-    </div>
-
-    <!-- SERVICES -->
-
-    <section class="services background" id="services">
-        <h1 class="heading">What We Offer Our Students</h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="./images/coding.jpg" alt="Mathematics" class="tours" style="object-position: top;">
-                <div class="info">
-                    <a href="english.html"><h3>Mathematics</h3></a>
+        <!-- HOME -->
+        <section class="home background2" id="home">
+            <div class="content">
+                <div class="element">
+                    <h1>Welcome to <br> <span>MESHACK MONARENG </span> <br> ACADEMY </h1>
+                    <div class="flex-center">
+                        <h3>Mathematics, Science and Digital Technology <br>Excellence</h3>
+                    </div>
+                    <div class="flex-center">
+                        <a href="background.html" class="btn" id="btn">Learn More</a>
+                    </div>
                 </div>
             </div>
-            <div class="box">
-                <img src="./images/wp3847335.webp" alt="English" class="tours">
-                <div class="info">
-                    <a href="english.html"><h3>English</h3></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./images/Factors-Influencing-Web-Design-Costs-293793208.jpg" alt="Physics" class="tours">
-                <div class="info">
-                    <a href="physicalSciences.html"><h3>Physical Sciences</h3></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/team.jpg" alt="web Development">
-                <div class="info">
-                    <a href="webDevelopment.html"><h3>Data Science</h3></a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- OUR CLIENTS -->
-
-    <div class="our-client sub-section">
-        <h1 class="heading" style="margin: 2em auto;">Our Amazing Partners</h1>
-        <div class="container flex-center">
-            <div class="wrapper">
-                <div class="item item1"></div>
-                <div class="item item2"></div>
-                <div class="item item3"></div>
-                <div class="item item4"></div>
-                <div class="item item5"></div>
-                <div class="item item6"></div>
-                <div class="item item7"></div>
-                <div class="item item8"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- TIMER -->
-
-    <div class="timer_body">
-        <div class="title">
-            <h1>Term 3 starts in...</h1>
-        </div>
-        <div class="flex-center">
-            <div id="time">
-                <div class="circle" style="color:#ff2972">
-                    <div class="dots day_dot"></div>
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70" id="dd"></circle>
-                    </svg>
-                    <div id="days">00 <br><span>Days</span></div>
-                </div>
-                <div class="circle" style="color:#fff">
-                    <div class="dots hr_dot"></div>
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70" id="hh"></circle>
-                    </svg>
-                    <div id="hours">00</div>
-                </div>
-                <div class="circle" style="color:#fee800">
-                    <div class="dots min_dot"></div>
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70" id="mm"></circle>
-                    </svg>
-                    <div id="minutes">00</div>
-                </div>
-                <div class="circle" style="color:#04fc43">
-                    <div class="dots sec_dot"></div>
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70" id="ss"></circle>
-                    </svg>
-                    <div id="seconds">00</div>
-                </div>
-            </div>
-        </div>
-        <h2 class="newYear">We <br><span>Rocked !!!</span></h2>    
-    </div>
-
-    <footer class="background">
-        <div class="footer-container">
-            <div class="footer-company-info">
+        <!-- FEATURES -->
+        <section class="features" id="features">
+            <h1 class="heading">Why Students Choose Us</h1>
+            <div class="box-container">
                 <div class="box">
-                    <h3>Category</h3>
-                    <a href="background.html ">About Us</a>
-                    <a href="vision.html">Our Vision, Mission and Values</a>
+                    <img src="images/certified.png" alt="">
+                    <div class="info">
+                        <h3>Personalised Attention</h3>
+                    </div>
                 </div>
                 <div class="box">
-                    <h3>Quick Links</h3>
-                    <a href="program.html">Our Programs and Operations</a>
-                    <a href="organizationStructure.html">Our Organization Structure</a>
+                    <img src="images/remote.png" alt="">
+                    <div class="info">
+                        <h3>Access to WiFi</h3>
+                        <p></p>
+                    </div>
                 </div>
                 <div class="box">
-                    <h3>Extra Links</h3>
-                    <a href="enroll.html">Enrol Now</a>
-                    <a href="schoolCalendar.html">Our School Calendar</a>
+                    <img src="images/team.png" alt="">
+                    <div class="info">
+                        <h3>Tailored Assessments And Feedback</h3>
+                    </div>
                 </div>
             </div>
-            <div class="about">
-                <h2>MESHACK ACADEMY</h2>
-                <p>Mathematics, Science and Digital Technology Excellence</p>
+        </section>
+
+        <!-- TRENDS AND NEWS -->
+        <div class="swiper mySwiper">
+            <h1 class="heading">News and Trends</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><p>We are hosting the Academy's first parents' meeting on the 8th of June 2025. This is in keeping with our values of prioritising a valuable learner-coach-parents relationship to enhance our quality output.</p><img src="images/girl-doing-math.jpg">
+                </div>
             </div>
-            <div class="footer-copyright">
-                <p>&#169 2025 by Meshack Web Solutions (Pty) Ltd. All Rights Reserved.</p>
-                <p>Reg. No.: 2024/727172/07</p>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div> -->
+        </div>
+
+        <!-- SERVICES -->
+        <section class="portfolio section" id="portfolio">
+            <h1 class="heading">Our Services</h1>
+            <div class="container flex-center">
+                <div class="content">
+                    <div class="portfolio-list">
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>Mathematics</h3> 
+                                    <span>Tuition</span>
+                                </div>
+                                <img src="./images/math-map.png" alt="">
+                            </div>
+                            <div class="portfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i class=" portfolio-close-btn"></i>
+                                    <h3>Mathematics</h3>
+                                    <img src="./images/math-map.png" alt="">
+                                    <p>We provide personalised and professional after-school and weekends Mathematics tuition for Further Education and Training Phase in Dicks Halt and Madadeni.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>Physical Sciences</h3> 
+                                    <span>Tuition</span>
+                                </div>
+                                <img src="./images/math2.jpg" alt="">
+                            </div>
+                            <div class="portfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i class=" portfolio-close-btn"></i>
+                                    <h3>Physical Sciences</h3>
+                                    <img src="./images/math2.jpg" alt="">
+                                    <p>We provide personalised and professional after-school and weekends Physical Sciences tuition for the Further Education and Training Phase in Dicks Halt and Madadeni. We provide practical experiments and video content to make our lessons convenient and relatable to grasp.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>Web Development</h3> 
+                                    <span>Skills Training</span>
+                                </div>
+                                <img src="./images/coding.jpg" alt="">
+                            </div>
+                            <div class="portfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i class="portfolio-close-btn"></i>
+                                    <h3>Web Development</h3>
+                                    <img src="./images/coding.jpg" alt="">
+                                    <p>We facilitate Web Development Skills training for persons from the age of 16 years and older. Our Programme includes learning HTML, CSS, JavaScript, Node.js, express.js and SQL. We also work with frameworks such as React and React Native for both the development of Web and Mobile Applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>Data Science</h3> 
+                                    <span>Skills Training</span>
+                                </div>
+                                <img src="./images/team.jpg" alt="">
+                            </div>
+                            <div class="portfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i class="portfolio-close-btn"></i>
+                                    <h3>Data Science</h3>
+                                    <img src="./images/team.jpg" alt="">
+                                    <p>We facilitate Data Science skills programme with Python for post matriculants and graduates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR CLIENTS -->
+        <div class="our-client sub-section">
+            <h1 class="heading">Our Amazing Partners</h1>
+            <div class="container flex-center">
+                <div class="wrapper">
+                    <div class="item item1"></div>
+                    <div class="item item2"></div>
+                    <div class="item item3"></div>
+                    <div class="item item4"></div>
+                    <div class="item item5"></div>
+                    <div class="item item6"></div>
+                    <div class="item item7"></div>
+                    <div class="item item8"></div>
+                </div>
             </div>
         </div>
-    </footer>
-    <script>
-        window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-        });
-    </script>
-    <script>
-        const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
 
-        menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
+        <!-- TIMER -->
+        <div class="timer_body">
+            <h1 class="heading">End of Term 3 Countdown...</h1>
+            <div class="flex-center">
+                <div id="time">
+                    <div class="circle" style="color:#ff2972">
+                        <div class="dots day_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="dd"></circle>
+                        </svg>
+                        <div id="days">00 <br><span>Days</span></div>
+                    </div>
+                    <div class="circle" style="color:#fff">
+                        <div class="dots hr_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="hh"></circle>
+                        </svg>
+                        <div id="hours">00</div>
+                    </div>
+                    <div class="circle" style="color:#fee800">
+                        <div class="dots min_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="mm"></circle>
+                        </svg>
+                        <div id="minutes">00</div>
+                    </div>
+                    <div class="circle" style="color:#04fc43">
+                        <div class="dots sec_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="ss"></circle>
+                        </svg>
+                        <div id="seconds">00</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="newYear" style="color: darkcyan; font-weight: bold;">We Rocked !!!</h2>    
+        </div>
 
-        // now, we will fix navigation issue...menu close after clicked any link
+        <footer class="background">
+            <div class="footer-container">
+                <div class="footer-company-info">
+                    <div class="box">
+                        <h3>Category</h3>
+                        <a href="background.html ">About Us</a>
+                        <a href="vision.html">Our Vision, Mission and Values</a>
+                    </div>
+                    <div class="box">
+                        <h3>Quick Links</h3>
+                        <a href="organizationStructure.html">Our Organization Structure</a>
+                    </div>
+                    <div class="box">
+                        <h3>Extra Links</h3>
+                        <a href="enroll.html">Enrol Now</a>
+                        <a href="schoolCalendar.html">Our School Calendar</a>
+                    </div>
+                </div>
+                <div class="about">
+                    <h2>MESHACK MONARENG <br> ACADEMY</h2>
+                    <p>Mathematics, Science and Digital Technology Excellence</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&#169 2025 by Meshack Web Solutions (Pty) Ltd. All Rights Reserved.</p>
+                    <p>Reg. No.: 2024/727172/07</p>
+                </div>
+            </div>
+        </footer>
+        <script>
 
-        function toggleMenu() {
-            menuBtn.classList.remove('active');
-            navigation.classList.remove('active');
-        }
-    </script>
-    <script>
+            // PORTFOLIO SECTION - MODAL
 
-        // TIMER FEATURE
-        
-        let days = document.getElementById('days');
-        let hours = document.getElementById('hours');
-        let minutes = document.getElementById('minutes');
-        let seconds   = document.getElementById('seconds');
-        
-        let dd = document.getElementById('dd');
-        let hh = document.getElementById('hh');
-        let mm = document.getElementById('mm');
-        let ss = document.getElementById('ss');
-        
-        let day_dot = document.querySelector('.day_dot');
-        let hr_dot = document.querySelector('.hr_dot');
-        let min_dot = document.querySelector('.min_dot');
-        let sec_dot = document.querySelector('.sec_dot');
-        
-        let endDate = '7/22/2025 08:00:00';
-        
-        let x = setInterval(function(){
-            let now = new Date(endDate).getTime();
-            let countDown = new Date().getTime();
-            let distance = now - countDown;
-        
-            // time calculation for remaining days, hours and seconds
-        
-            let d = Math.floor(distance / (1000 * 60 * 60 * 24));
-        
-            let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        
-            let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        
-            let s = Math.floor((distance % (1000 * 60)) / (1000));
-        
-            // lets output the result in the elements with id
-        
-            days.innerHTML = d + "<br><span>Days</span>";
-            hours.innerHTML = h + "<br><span>Hours</span>";
-            minutes.innerHTML = m + "<br><span>Minutes</span>";
-            seconds.innerHTML = s + "<br><span>Seconds</span>";
-        
-            // ANIMATE STROKE
-            // 365 DAYS IN A YEAR
+            const portfolioModals = document.querySelectorAll(".portfolio-model");
+            const imgCards = document.querySelectorAll(".img-card");
+            const portfolioCloseBtns= document.querySelectorAll(".portfolio-close-btn");
 
-            dd.style.strokeDashoffset = 440 - (440 * d) / 365;
-        
-            // THERE IS 24 HOURS IN A DAY
-            
-            hh.style.strokeDashoffset = 440 - (440 * h) / 24;
-    
-            // THERE IS 60 MINUTES IN AN HOUR
+            var portfolioModal = function(modalClick){
+                portfolioModals[modalClick].classList.add("active");
+            };
 
-            mm.style.strokeDashoffset = 440 - (440 * m) / 60;
-        
-            // THERE IS 60 SECONDS IN A MINUTE
+            imgCards.forEach((imgCard, i) => {
+                imgCard.addEventListener("click", () => {
+                    portfolioModal(i);
+                });
+            });
 
-            ss.style.strokeDashoffset = 440 -(440 * s) / 60;
-        
-            // ANIMATE CIRCLE DOTS
-            // 350deg / 365 days = 0.986
+            portfolioCloseBtns.forEach((portfolioCloseBtn) => {
+                portfolioCloseBtn.addEventListener("click", () => {
+                portfolioModals.forEach((portfolioModalView) => {
+                        portfolioModalView.classList.remove("active");
+                    });
+                });
+            });
 
-            day_dot.style.transform = `rotateZ(${d * 0.986}deg`;
+            // TIMER FEATURE
+            let days = document.getElementById('days');
+            let hours = document.getElementById('hours');
+            let minutes = document.getElementById('minutes');
+            let seconds   = document.getElementById('seconds');
 
-            // 360deg / 24 hrs = 15
+            let dd = document.getElementById('dd');
+            let hh = document.getElementById('hh');
+            let mm = document.getElementById('mm');
+            let ss = document.getElementById('ss');
 
-            hr_dot.style.transform = `rotateZ(${h * 15}deg`;
-           
-            // 
-            min_dot.style.transform = `rotateZ(${m * 6}deg`;
-        
-            // 
-            sec_dot.style.transform = `rotateZ(${s * 6}deg`;
-        
-            // WRITE SOME TEXT WHEN COUNTDOWN IS OVER
-        
-            if(distance < 0){
-                clearInterval(x);
-                document.getElementById("time").style.display = 'none'
-                document.querySelector(".newYear").style.display = 'block';
-            }
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            let day_dot = document.querySelector('.day_dot');
+            let hr_dot = document.querySelector('.hr_dot');
+            let min_dot = document.querySelector('.min_dot');
+            let sec_dot = document.querySelector('.sec_dot');
 
-    <script src="js/swiper-bundle.min.js"></script>
+            let endDate = '10/03/2025 08:00:00';
 
-    <script src="/js/index.js"></script>
-</body>
+            let x = setInterval(function(){
+                let now = new Date(endDate).getTime();
+                let countDown = new Date().getTime();
+                let distance = now - countDown;
+
+                // time calculation for remaining days, hours and seconds
+
+                let d = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+                let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+                let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+                let s = Math.floor((distance % (1000 * 60)) / (1000));
+
+                // lets output the result in the elements with id
+
+                days.innerHTML = d + "<br><span>Days</span>";
+                hours.innerHTML = h + "<br><span>Hours</span>";
+                minutes.innerHTML = m + "<br><span>Minutes</span>";
+                seconds.innerHTML = s + "<br><span>Seconds</span>";
+
+                // ANIMATE STROKE
+                // 365 DAYS IN A YEAR
+
+                dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+
+                // THERE IS 24 HOURS IN A DAY
+                
+                hh.style.strokeDashoffset = 440 - (440 * h) / 24;
+
+                // THERE IS 60 MINUTES IN AN HOUR
+
+                mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+
+                // THERE IS 60 SECONDS IN A MINUTE
+
+                ss.style.strokeDashoffset = 440 -(440 * s) / 60;
+
+                // ANIMATE CIRCLE DOTS
+                // 350deg / 365 days = 0.986
+
+                day_dot.style.transform = `rotateZ(${d * 0.986}deg`;
+
+                // 360deg / 24 hrs = 15
+
+                hr_dot.style.transform = `rotateZ(${h * 15}deg`;
+
+                // 
+                min_dot.style.transform = `rotateZ(${m * 6}deg`;
+
+                // 
+                sec_dot.style.transform = `rotateZ(${s * 6}deg`;
+
+                // WRITE SOME TEXT WHEN COUNTDOWN IS OVER
+
+                if(distance < 0){
+                    clearInterval(x);
+                    document.getElementById("time").style.display = 'none'
+                    document.querySelector(".newYear").style.display = 'block';
+                }
+            });
+        </script>
+        <script src="./js/index.js"></script>
+        <script src="./js/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </body>
 </html>
