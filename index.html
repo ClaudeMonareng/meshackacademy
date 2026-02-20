@@ -1,393 +1,320 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="./images/MA.png">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <title>Meshack Monareng Academy | Official Website </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="loadOverlay" style="background-color: #333; position: absolute; top: 0px; width: 100%; height:100%; z-index: 2000;"></div>
-        
-        <!-- HEADER -->
-
-        <header class="header">
-            <nav class="nav container">
-                <div class="nav__data">
-                    <a href="index.html" class="nav__logo">
-                        <h3 style="color: rgb(236, 228, 208);font-size: 2em;">MESHACK MONARENG <span><br>ACADEMY</span></h3>
-                    </a>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <div class="nav-menu-btn"></div>
-                        <div class="nav-close-btn"></div>
-                    </div>
-                </div>
-
-                <!-- NAV MENU -->
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li><a href="index.html" class="nav__link">Home</a></li>
-                        <!-- DROPDOWN 1-->
-                        <li class="dropdown__item">
-                            <div class="nav__link">About Us +</div>
-                            <ul class="dropdown__menu">
-                                <li><a href="background.html" class="dropdown__link">Background</a></li>
-                                <li><a href="vision.html" class="dropdown__link">Vision</a></li>  
-                                <li><a href="students.html" class="dropdown__link">Students</a></li>       
-                                <!-- DROPDOWN SUBMENU-->                        
-                                <li class="dropdown__subitem">
-                                    <div class="dropdown__link" style="cursor: pointer;">More +</div>
-                                    <ul class="dropdown__submenu">
-                                        <li><a href="aboutfounder.html" class="dropdown__sublink">Founder</a></li>
-                                        <li><a href="staff.html" class="dropdown__sublink">Staff</a></li>
-                                        <li><a href="organizationStructure.html" class="dropdown__sublink">Governance</a></li>
-                                    </ul>
-                                </li>       
-                            </ul>
-                        </li>
-                        <li><a href="testimonials.html" class="nav__link">Testimonials</a></li>
-                        <li><a href="contact.html" class="nav__link">Contact</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/siphosethu.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Meshack Monareng Labs | Official Website</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html" class="logo"><h3 style="color: rgb(236, 228, 208);">MESHACK MONARENG<span><br>LABS</span></h3></a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn"></div>
+                    <ul>
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#students" onclick="toggleMenu()">Students</a></li>
+                        <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                        <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                     </ul>
-                </div> 
-            </nav>
-        </header>
-
-        <!-- HOME -->
-        <section class="home background2" id="home">
-            <div class="content">
-                <div class="element">
-                    <h1>Welcome to <br> <span>MESHACK MONARENG </span> <br> ACADEMY </h1>
-                    <div class="flex-center">
-                        <h3>Mathematics, Science and Digital Technology <br>Excellence</h3>
-                    </div>
-                    <div class="flex-center">
-                        <a href="background.html" class="btn" id="btn">Learn More</a>
-                    </div>
                 </div>
             </div>
-        </section>
+            <div class="nav-menu-btn"></div>
+        </nav>
+    </header>
 
-        <!-- FEATURES -->
-        <section class="features" id="features">
-            <h1 class="heading">Why Students Choose Us</h1>
-            <div class="box-container">
-                <div class="box">
-                    <img src="images/certified.png" alt="">
-                    <div class="info">
-                        <h3>Personalised Attention</h3>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="images/remote.png" alt="">
-                    <div class="info">
-                        <h3>Access to WiFi</h3>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="images/team.png" alt="">
-                    <div class="info">
-                        <h3>Tailored Assessments And Feedback</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- HOME -->
 
-        <!-- TRENDS AND NEWS -->
-        <div class="swiper mySwiper">
-            <h1 class="heading">News and Trends</h1>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><p>We are hosting the Academy's first parents' meeting on the 8th of June 2025. This is in keeping with our values of prioritising a valuable learner-coach-parents relationship to enhance our quality output.</p><img src="images/girl-doing-math.jpg">
-                </div>
-            </div>
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div> -->
-        </div>
-
-        <!-- SERVICES -->
-        <section class="portfolio section" id="portfolio">
-            <h1 class="heading">Our Services</h1>
-            <div class="container flex-center">
-                <div class="content">
-                    <div class="portfolio-list">
-                        <div class="img-card-container">
-                            <div class="img-card">
-                                <div class="overlay"></div>
-                                <div class="info">
-                                    <h3>Mathematics</h3> 
-                                    <span>Tuition</span>
-                                </div>
-                                <img src="./images/math-map.png" alt="">
-                            </div>
-                            <div class="portfolio-model flex-center">
-                                <div class="portfolio-model-body">
-                                    <i class=" portfolio-close-btn"></i>
-                                    <h3>Mathematics</h3>
-                                    <img src="./images/math-map.png" alt="">
-                                    <p>We provide personalised and professional after-school and weekends Mathematics tuition for Further Education and Training Phase in Dicks Halt and Madadeni.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-card-container">
-                            <div class="img-card">
-                                <div class="overlay"></div>
-                                <div class="info">
-                                    <h3>Physical Sciences</h3> 
-                                    <span>Tuition</span>
-                                </div>
-                                <img src="./images/math2.jpg" alt="">
-                            </div>
-                            <div class="portfolio-model flex-center">
-                                <div class="portfolio-model-body">
-                                    <i class=" portfolio-close-btn"></i>
-                                    <h3>Physical Sciences</h3>
-                                    <img src="./images/math2.jpg" alt="">
-                                    <p>We provide personalised and professional after-school and weekends Physical Sciences tuition for the Further Education and Training Phase in Dicks Halt and Madadeni. We provide practical experiments and video content to make our lessons convenient and relatable to grasp.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-card-container">
-                            <div class="img-card">
-                                <div class="overlay"></div>
-                                <div class="info">
-                                    <h3>Web Development</h3> 
-                                    <span>Skills Training</span>
-                                </div>
-                                <img src="./images/coding.jpg" alt="">
-                            </div>
-                            <div class="portfolio-model flex-center">
-                                <div class="portfolio-model-body">
-                                    <i class="portfolio-close-btn"></i>
-                                    <h3>Web Development</h3>
-                                    <img src="./images/coding.jpg" alt="">
-                                    <p>We facilitate Web Development Skills training for persons from the age of 16 years and older. Our Programme includes learning HTML, CSS, JavaScript, Node.js, express.js and SQL. We also work with frameworks such as React and React Native for both the development of Web and Mobile Applications.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-card-container">
-                            <div class="img-card">
-                                <div class="overlay"></div>
-                                <div class="info">
-                                    <h3>Data Science</h3> 
-                                    <span>Skills Training</span>
-                                </div>
-                                <img src="./images/team.jpg" alt="">
-                            </div>
-                            <div class="portfolio-model flex-center">
-                                <div class="portfolio-model-body">
-                                    <i class="portfolio-close-btn"></i>
-                                    <h3>Data Science</h3>
-                                    <img src="./images/team.jpg" alt="">
-                                    <p>We facilitate Data Science skills programme with Python for post matriculants and graduates.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- OUR CLIENTS -->
-        <div class="our-client sub-section">
-            <h1 class="heading">Our Amazing Partners</h1>
-            <div class="container flex-center">
-                <div class="wrapper">
-                    <div class="item item1"></div>
-                    <div class="item item2"></div>
-                    <div class="item item3"></div>
-                    <div class="item item4"></div>
-                    <div class="item item5"></div>
-                    <div class="item item6"></div>
-                    <div class="item item7"></div>
-                    <div class="item item8"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- TIMER -->
-        <div class="timer_body">
-            <h1 class="heading">End of Term 3 Countdown...</h1>
+    <section class="home background2" id="home">
+        <div class="content">
+            <h1>Welcome to <br><span>MESHACK MONARENG LABS</span></h1>
             <div class="flex-center">
-                <div id="time">
-                    <div class="circle" style="color:#ff2972">
-                        <div class="dots day_dot"></div>
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70" id="dd"></circle>
-                        </svg>
-                        <div id="days">00 <br><span>Days</span></div>
-                    </div>
-                    <div class="circle" style="color:#fff">
-                        <div class="dots hr_dot"></div>
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70" id="hh"></circle>
-                        </svg>
-                        <div id="hours">00</div>
-                    </div>
-                    <div class="circle" style="color:#fee800">
-                        <div class="dots min_dot"></div>
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70" id="mm"></circle>
-                        </svg>
-                        <div id="minutes">00</div>
-                    </div>
-                    <div class="circle" style="color:#04fc43">
-                        <div class="dots sec_dot"></div>
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70" id="ss"></circle>
-                        </svg>
-                        <div id="seconds">00</div>
+                <h3>Your journey is our journey</h3>
+            </div>
+            <div class="flex-center">
+                    <a href="#about" class="btn" id="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="features" id="features">
+        <h3 style="text-align: center; margin-bottom:2em;"> Why Students Love Us</h3>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/book.jpg" alt="">
+                <div class="info">
+                    <h3>Learning Environment</h3>
+                    <p>We boast a robust, engaging and open learning space in our core learning subjects.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/remote.png" alt="">
+                <div class="info">
+                    <h3>Fast WIFI</h3>
+                    <p>We provide wifi access for our students to to be anabled to do their homeworks, assignments and general research.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/certified.png" alt="">
+                <div class="info">
+                    <h3>Photocopying, scanning and printing services</h3>
+                    <p>Our students are allowed to make photocopies, scans and printouts to supplements their school work.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3 style="text-align: center; margin:2em 0;">Why Parents Choose Us</h3>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/certificate.png" alt="">
+                <div class="info">
+                    <h3>Continuous Mentoring</h3>
+                    <p>Our Staff receive continuous learning and development, in partnership with local stakeholders, to remain relevant and competitve in the industry.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/team.png" alt="">
+                <div class="info">
+                    <h3>Professional Staff</h3>
+                    <p>Our staff our subject experts from Engineering to Data Science and hold a combined experience of 5+ years in the industry.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/f.png" alt="">
+                <div class="info">
+                    <h3>Developed Programs</h3>
+                    <p>Teaching curricula and methodologies of the Creche are tried and tested and remain highly responsive and compliant with the National and Provincial Department of Basic Education's policies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about background" id="about">
+        <div class="image">
+            <img src="images/thumbnail.png" alt="">
+        </div>
+        <div class="content">
+            <h3>About Us</h3>
+            <div class="para">
+                <p class="list">We strive to provide a friendly, warm, supportive, safe, clean, stimulating, loving and caring environment for our students.</p>
+                <p class="list">We are committed to creating and providing an optimistic learning experience which promotes each student's social, emotional, physical and cognitive development established in our commitment to the families we serve. </p>
+                <p class="list">We are committed to total exellence and value-added service towards our clients and partners and our students with a view to become a dominant education provider in Mathematics, Physical Sciences and English. We will achieve this by paying close and personal attention to each student which is essential to providing quality experience.</p>
+                <div class="flex-center">
+                    <a href="#contact" class="btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="shape-container">
+        <div class="waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- TEACHERS -->
+
+    <section class="services" id="students">
+
+        <h3>Some of our students</h3>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/Sithembiso.jpg" style="">
+                <div class="info">
+                    <a href=""><h3>Sithembiso</h3></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/nkaz.jpg" alt="" class="tours">
+                <div class="info">
+                    <a href=""><h3>Nokwazi</h3></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Cebolenkosi.jpg" style="object-position: top;" alt="">
+                <div class="info">
+                    <a href=""><h3>Cebolenkosi</h3></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/slindo.jpg" alt="">
+                <div class="info">
+                    <a href=""><h3>Slindokuhle</h3></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Bandile.jpg" alt="">
+                <div class="info">
+                    <a href=""><h3>Bandile</h3></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="services background" id="services">
+
+        <h3>What We are involved with</h3>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/girl-doing-math.jpg" style="object-position: top;">
+                <div class="info">
+                    <a href=""><h3>Mathematics</h3></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/icidi_gorge.jpg" alt="" class="tours">
+                <div class="info">
+                    <a href=""><h3>Physical Sciences</h3></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/wp3847335.webp" style="object-position: top;" alt="">
+                <div class="info">
+                    <a href=""><h3>English</h3></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/math-map.png" alt="">
+                <div class="info">
+                    <a href=""><h3>Computer Coding</h3></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="shape-container">
+        <div class="waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS SECTION -->
+
+    <section class="testimonials" id="testimonials">
+    
+        <h2>What the Community says</h2>
+        
+        <div class="box-container">
+            <div class="box">
+                <div class="row">
+                    <div class="content">
+                        <img src="images/Marc Leistner.jfif" alt="">
+                        <h3>Marc Leistner</h3>
+                    </div> 
+                    <div class="info">
+                        <p>My name is Marc Leistner, im from Luxembourg, i first came to contact with the academy from their website and since then i loved it. I can't wait to visit it when i return back to South Africa</p>
+                        <p> - Former Deputy Chairman of the European Investment Bank for Southern Africa</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
                     </div>
                 </div>
             </div>
-            <h2 class="newYear" style="color: darkcyan; font-weight: bold;">We Rocked !!!</h2>    
+            <div class="box">
+                <div class="row">
+                    <div class="content">
+                        <img src="images/image2.jpeg" alt="">
+                        <h3>Tebogo Moseamedi</h3>
+                    </div> 
+                    <div class="info">
+                        <p>My name is Tebogo Moseamedi. I first came to contact with the academy from their website and personally think its an interesting project that solve much of public schooling problems especially in the semi-rural areas.</p>
+                        <p>- Python programmer and Co-Founder of Kewaa</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact background" id="contact">
+        <div class="row">
+            <div class="contact-info">
+                <div class="box" id="contact-details">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 29H37 Dicks Halt, Newcastle, KwaZulu-Natal, South Africa</p>
+                    <p>Founder: Lehlohonolo Claude Monareng</p>
+                    <p><i class="fas fa-envelope"></i> claude.monareng@outlook.com</p>
+                    <p><i class="fas fa-phone"></i> 066 066 8719 </p>
+                </div>
+                <div class="box" id="operating-times">
+                    <h3>Operating Times</h3>
+                    <p>Mondays to Fridays: 10:00 - 18:00 </p>
+                    <p>Saturdays: 10:00 - 14:00 </p>
+                    <p>Sundays: 10:00 - 14:00</p>
+                </div>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7062.952096556109!2d30.151353876062313!3d-27.73345922660574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eee0a862723cf1d%3A0x7825bad0a2077048!2sDicks%20Halt%2C%20Newcastle%2C%202952!5e0!3m2!1sen!2sza!4v1771628156963!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <div class="shape-container">
+        <div class="waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    
+    <div class="footer">
+            <div class="box">
+                <h3>Meshack Monareng Labs</h3>
+                <!-- <P>Your journey is our journey</P> -->
+            </div>
+
+            <div class="box-container">
+                <!-- <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="enroll.html"><i class="fas fa-caret-right"></i> Enroll Now</a>
+                    <a href="schoolCalendar.html"><i class="fas fa-caret-right"></i> School Calendar</a>
+                </div>
+                <div class="box">
+                    <h3>Category</h3>
+                    <a href="background.html "><i class="fas fa-caret-right"></i> About Us</a>
+                    <a href="vision.html"><i class="fas fa-caret-right"></i> Our Vision, Mission and Values</a>
+                </div>
+                <div class="box">
+                    <h3>Extra Links</h3>
+                    <a href="strategicGoal.html"><i class="fas fa-caret-right"></i> Our Strategic Goal</a>
+                    <a href="organizationStructure.html"><i class="fas fa-caret-right"></i> Our Organization Structure</a>
+                </div> -->
+            </div>
+            <div class="footer-copyright"     style="margin-top: 8rem;">            
+                <!-- <div class="box" id="follow-us-details">
+                    <h3 id="follow-us-heading">Follow Us</h3>
+                    <a href="https://web.facebook/" class="fab fa-facebook-f" id="faebook"></a>
+                    <a href="https://twitter/" class="fab fa-twitter" id="twitter"></a>
+                </div> -->
+                <p>&#169 2026 by Meshack Monareng Labs (Pty) Ltd. All Rights Reserved.</p>
+                <p>Reg. No: 2024/727172/07</p>
+                <!-- <p style="font-size: 1.5rem;">Reg. No.: 2024/727172/07</p> -->
+            </div>
         </div>
 
-        <footer class="background">
-            <div class="footer-container">
-                <div class="footer-company-info">
-                    <div class="box">
-                        <h3>Category</h3>
-                        <a href="background.html ">About Us</a>
-                        <a href="vision.html">Our Vision, Mission and Values</a>
-                    </div>
-                    <div class="box">
-                        <h3>Quick Links</h3>
-                        <a href="organizationStructure.html">Our Organization Structure</a>
-                    </div>
-                    <div class="box">
-                        <h3>Extra Links</h3>
-                        <a href="enroll.html">Enrol Now</a>
-                        <a href="schoolCalendar.html">Our School Calendar</a>
-                    </div>
-                </div>
-                <div class="about">
-                    <h2>MESHACK MONARENG <br> ACADEMY</h2>
-                    <p>Mathematics, Science and Digital Technology Excellence</p>
-                </div>
-                <div class="footer-copyright">
-                    <p>&#169 2025 by Meshack Web Solutions (Pty) Ltd. All Rights Reserved.</p>
-                    <p>Reg. No.: 2024/727172/07</p>
-                </div>
-            </div>
-        </footer>
-        <script>
-
-            // PORTFOLIO SECTION - MODAL
-
-            const portfolioModals = document.querySelectorAll(".portfolio-model");
-            const imgCards = document.querySelectorAll(".img-card");
-            const portfolioCloseBtns= document.querySelectorAll(".portfolio-close-btn");
-
-            var portfolioModal = function(modalClick){
-                portfolioModals[modalClick].classList.add("active");
-            };
-
-            imgCards.forEach((imgCard, i) => {
-                imgCard.addEventListener("click", () => {
-                    portfolioModal(i);
-                });
-            });
-
-            portfolioCloseBtns.forEach((portfolioCloseBtn) => {
-                portfolioCloseBtn.addEventListener("click", () => {
-                portfolioModals.forEach((portfolioModalView) => {
-                        portfolioModalView.classList.remove("active");
-                    });
-                });
-            });
-
-            // TIMER FEATURE
-            let days = document.getElementById('days');
-            let hours = document.getElementById('hours');
-            let minutes = document.getElementById('minutes');
-            let seconds   = document.getElementById('seconds');
-
-            let dd = document.getElementById('dd');
-            let hh = document.getElementById('hh');
-            let mm = document.getElementById('mm');
-            let ss = document.getElementById('ss');
-
-            let day_dot = document.querySelector('.day_dot');
-            let hr_dot = document.querySelector('.hr_dot');
-            let min_dot = document.querySelector('.min_dot');
-            let sec_dot = document.querySelector('.sec_dot');
-
-            let endDate = '10/03/2025 08:00:00';
-
-            let x = setInterval(function(){
-                let now = new Date(endDate).getTime();
-                let countDown = new Date().getTime();
-                let distance = now - countDown;
-
-                // time calculation for remaining days, hours and seconds
-
-                let d = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-                let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-                let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-                let s = Math.floor((distance % (1000 * 60)) / (1000));
-
-                // lets output the result in the elements with id
-
-                days.innerHTML = d + "<br><span>Days</span>";
-                hours.innerHTML = h + "<br><span>Hours</span>";
-                minutes.innerHTML = m + "<br><span>Minutes</span>";
-                seconds.innerHTML = s + "<br><span>Seconds</span>";
-
-                // ANIMATE STROKE
-                // 365 DAYS IN A YEAR
-
-                dd.style.strokeDashoffset = 440 - (440 * d) / 365;
-
-                // THERE IS 24 HOURS IN A DAY
-                
-                hh.style.strokeDashoffset = 440 - (440 * h) / 24;
-
-                // THERE IS 60 MINUTES IN AN HOUR
-
-                mm.style.strokeDashoffset = 440 - (440 * m) / 60;
-
-                // THERE IS 60 SECONDS IN A MINUTE
-
-                ss.style.strokeDashoffset = 440 -(440 * s) / 60;
-
-                // ANIMATE CIRCLE DOTS
-                // 350deg / 365 days = 0.986
-
-                day_dot.style.transform = `rotateZ(${d * 0.986}deg`;
-
-                // 360deg / 24 hrs = 15
-
-                hr_dot.style.transform = `rotateZ(${h * 15}deg`;
-
-                // 
-                min_dot.style.transform = `rotateZ(${m * 6}deg`;
-
-                // 
-                sec_dot.style.transform = `rotateZ(${s * 6}deg`;
-
-                // WRITE SOME TEXT WHEN COUNTDOWN IS OVER
-
-                if(distance < 0){
-                    clearInterval(x);
-                    document.getElementById("time").style.display = 'none'
-                    document.querySelector(".newYear").style.display = 'block';
-                }
-            });
-        </script>
-        <script src="./js/index.js"></script>
-        <script src="./js/swiper-bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    </body>
+    <script src="./index.js"></script>
+</body>
 </html>
